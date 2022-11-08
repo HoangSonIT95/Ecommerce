@@ -1,0 +1,339 @@
+[
+  {
+    "_id": { "$oid": "63610f022d55b9b2d87bda3b" },
+    "category": "iphone",
+    "imageURL": [
+      "https://cdn.tgdd.vn/Products/Images/42/251192/iphone-14-pro-max-080922-101659.jpg",
+      "https://cdn.tgdd.vn/Products/Images/42/251192/iphone-14-pro-max-300922-030207.jpg",
+      "https://cdn.tgdd.vn/Products/Images/42/251192/iphone-14-pro-max-080922-101705.jpg",
+      "https://cdn.tgdd.vn/Products/Images/42/251192/iphone-14-pro-max-080922-101709.jpg"
+    ],
+    "long_desc": "Tính năng nổi bật \n\n• Màn hình Dynamic Island - Sự biến mất của màn hình tai thỏ thay thế bằng thiết kế viên thuốc, OLED 6,7 inch, hỗ trợ always-on display\n\n• Cấu hình iPhone 14 Pro Max mạnh mẽ, hiệu năng cực khủng từ chipset A16 Bionic\n\n• Làm chủ công nghệ nhiếp ảnh - Camera sau 48MP, cảm biến TOF sống động\n\n• Pin liền lithium-ion kết hợp cùng công nghệ sạc nhanh cải tiến\n\n• Hệ điều hành iOS 16 bứt phá công nghệ\n\n• Camera selfie góc rộng lưu giữ nhiều khoảnh khắc đáng nhớ\n\n• Thiết kế bền bỉ với Ceramic Shield\n\n• Khả năng chống nước đạt chuẩn IP68 đứng đầu thị trường (5)\n\n• Mạng 5G cho tốc độ tải xuống siêu nhanh, xem video và nghe nhạc trực tuyến chất lượng cao (1)\n\n• iPhone 14 Pro Max đa dạng tính năng cải tiến: Face ID, chống nước…",
+    "name": "Apple iPhone 14 Pro Max",
+    "price": "33590000",
+    "short_desc": "iPhone 14 Pro Max - Những chiếc điện thoại iPhone 14 2022 được gọi tên trong hàng ngũ siêu phẩm smartphone thế hệ mới bởi công nghệ hàng đầu, thiết kế hoàn hảo cùng nhiều đột phá đáng kinh ngạc. Độ hoàn hảo của thế hệ Flagship mới nhất của Apple được tạo thành từ sự thống nhất giữa các yếu tố thiết kế, màn hình, cấu hình, hệ điều hành, camera, pin và các tính năng cải tiến.\n\n"
+  },
+  {
+    "_id": { "$oid": "63610f2c2d55b9b2d87bda3d" },
+    "category": "iphone",
+    "imageURL": [
+      "https://firebasestorage.googleapis.com/v0/b/funix-way.appspot.com/o/xSeries%2FCCDN%2FReactJS%2FAssignment_Images%2FASM03_Resources%2Fiphone_13_4.jpeg?alt=media&token=dc72dde3-cfa4-4710-9493-ac2aa0ecf249",
+      "https://firebasestorage.googleapis.com/v0/b/funix-way.appspot.com/o/xSeries%2FCCDN%2FReactJS%2FAssignment_Images%2FASM03_Resources%2Fiphone_13_3.jpeg?alt=media&token=b3417ab8-33b9-4b52-a980-8f9afe4e0896",
+      "https://firebasestorage.googleapis.com/v0/b/funix-way.appspot.com/o/xSeries%2FCCDN%2FReactJS%2FAssignment_Images%2FASM03_Resources%2Fiphone_13_2.jpeg?alt=media&token=74aac3de-0c55-490e-9601-30829de7879f",
+      "https://firebasestorage.googleapis.com/v0/b/funix-way.appspot.com/o/xSeries%2FCCDN%2FReactJS%2FAssignment_Images%2FASM03_Resources%2Fiphone_13_4.jpeg?alt=media&token=dc72dde3-cfa4-4710-9493-ac2aa0ecf249"
+    ],
+    "long_desc": "Tính năng nổi bật \n\n• Màn hình Super Retina XDR 6.7 inch với ProMotion cho cảm giác nhanh nhạy hơn (3)\n\n• Chế độ Điện Ảnh làm tăng thêm độ sâu trường ảnh nông và tự động thay đổi tiêu cự trong video\n\n• Hệ thống camera chuyên nghiệp Telephoto, Wide và Ultra Wide 12MP; LiDAR Scanner; phạm vi thu phóng quang học 6x; chụp ảnh macro; Phong Cách Nhiếp Ảnh, video ProRes (4), HDR thông minh thế hệ 4, chế độ Ban Đêm, Apple ProRAW, khả năng quay video HDR Dolby Vision 4K\n\n• Camera trước TrueDepth 12MP với chế độ Ban Đêm và khả năng quay video HDR Dolby Vision 4K\n\n• Chip A15 Bionic cho hiệu năng thần tốc\n\n• Thời gian xem video lên đến 28 giờ, thời lượng pin dài nhất từng có trên iPhone (2)\n\n• Thiết kế bền bỉ với Ceramic Shield\n\n• Khả năng chống nước đạt chuẩn IP68 đứng đầu thị trường (5)\n\n• Mạng 5G cho tốc độ tải xuống siêu nhanh, xem video và nghe nhạc trực tuyến chất lượng cao (1)\n\n• iOS 15 tích hợp nhiều tính năng mới cho phép bạn làm được nhiều việc hơn bao giờ hết với iPhone (6)..",
+    "name": "Apple iPhone 13 Pro Max - Alpine Green",
+    "price": "29390000",
+    "short_desc": "iPhone 13 Pro Max. Một nâng cấp hệ thống camera chuyên nghiệp hoành tráng chưa từng có. Màn hình Super Retina XDR với ProMotion cho cảm giác nhanh nhạy hơn. Chip A15 Bionic thần tốc. Mạng 5G siêu nhanh.1 Thiết kế bền bỉ và thời lượng pin dài nhất từng có trên iPhone (2).\n\n"
+  },
+  {
+    "_id": { "$oid": "63610f522d55b9b2d87bda3f" },
+    "category": "iphone",
+    "imageURL": [
+      "https://cdn.tgdd.vn/Products/Images/42/228737/iphone-12-256gb-045221-035228.jpg",
+      "https://cdn.tgdd.vn/Products/Images/42/228737/iphone-12-256gb-045121-035153.jpg",
+      "https://cdn.tgdd.vn/Products/Images/42/228737/iphone-12-256gb-274220-084247.jpg",
+      "https://cdn.tgdd.vn/Products/Images/42/228737/iphone-12-256gb-274320-084304.jpg"
+    ],
+    "long_desc": "Tính năng nổi bật \n\n• Mạnh mẽ, siêu nhanh với chip A14, RAM 6GB, mạng 5G tốc độ cao\n\n• Rực rỡ, sắc nét, độ sáng cao - Màn hình OLED cao cấp, Super Retina XDR hỗ trợ HDR10, Dolby Vision\n\n• Cụm 3 camera sau với độ phân giải 12MP  \n\n• Camera trước 12MP hỗ trợ mở FaceiD cùng công nghệ chống nước IP68\n\n• Viên pin liền cho thời lượng sử dụng lên đến cả ngày cùng công nghệ sạc nhanh \n\n• Hoàn thiện bằng khung nhôm tái chế, thân thiện với môi trường, các góc cạnh vuông vức, ít bo tròn, iPhone 12 có kích thước nhỏ hơn so với iPhone 11 nhưng tạo cảm giác cứng cáp và mạnh mẽ hơn.\n\n• Vượt xa các dòng iphone tiền nhiệm\n\n",
+    "name": "Apple iPhone 12 Pro Max",
+    "price": "25590000",
+    "short_desc": "Mẫu iPhone 12 sở hữu một thiết kế đã được “lột xác” hoàn toàn so với các thế hệ tiền nhiệm trước đây với cạnh được vát phẳng, vuông thành sắc cạnh, mang tới một cảm giác cực kì bền bỉ và chắc chắn. Thiết kế này khiến cho người dùng có thể dễ dàng liên tưởng tới những mẫu iPhone huyền thoại trước đây đã làm nên tên tuổi của Apple như iPhone 4 hoặc iPhone 5.\n\n"
+  },
+  {
+    "_id": { "$oid": "63610f7e2d55b9b2d87bda41" },
+    "category": "iphone",
+    "imageURL": [
+      "https://firebasestorage.googleapis.com/v0/b/funix-way.appspot.com/o/xSeries%2FCCDN%2FReactJS%2FAssignment_Images%2FASM03_Resources%2Fiphone_11_2.jpeg?alt=media&token=2e8b6c8e-56fa-4cfd-86c4-9be2ee6205e0",
+      "https://firebasestorage.googleapis.com/v0/b/funix-way.appspot.com/o/xSeries%2FCCDN%2FReactJS%2FAssignment_Images%2FASM03_Resources%2Fiphone_11_3.jpeg?alt=media&token=84af09ee-ef66-4227-94ef-bcd60c105b74",
+      "https://firebasestorage.googleapis.com/v0/b/funix-way.appspot.com/o/xSeries%2FCCDN%2FReactJS%2FAssignment_Images%2FASM03_Resources%2Fiphone_11_4.jpeg?alt=media&token=3008fd7b-7c54-460f-bd4e-afd0ba39f57c",
+      "https://firebasestorage.googleapis.com/v0/b/funix-way.appspot.com/o/xSeries%2FCCDN%2FReactJS%2FAssignment_Images%2FASM03_Resources%2Fiphone_11_1.jpeg?alt=media&token=fa286155-0c22-4533-b55a-cc8adc2ad08c"
+    ],
+    "long_desc": "Tính năng nổi bật \n•\tMàn hình Liquid Retina HD LCD 6.1 inch (3)  \n•\tChống nước và chống bụi (chống nước ở độ sâu 2 mét trong vòng tối đa 30 phút, đạt mức IP68) (1) \n•\tHệ thống camera kép 12MP với camera Ultra Wide và Wide; chế độ Ban Đêm, chế độ Chân Dung và video 4K tốc độ tối đa 60fps \n•\tCamera trước TrueDepth 12MP với chế độ Chân Dung, quay video 4K và quay video chậm \n•\tXác thực bảo mật với Face ID \n•\tChip A13 Bionic với Neural Engine thế hệ thứ ba \n•\tKhả năng sạc nhanh\n•\tSạc không dây (4) \n•\tiOS 13 cùng với chế độ Dark Mode, các công cụ chỉnh ảnh và quay video mới, và các tính năng bảo mật hoàn toàn mới ",
+    "name": "Apple iPhone 11 64GB",
+    "price": "10999000",
+    "short_desc": "Quay video 4K, chụp ảnh chân dung tuyệt đẹp và chụp ảnh phong cảnh rộng với hệ thống camera kép hoàn toàn mới. Chụp ảnh tuyệt đẹp trong điều kiện ánh sáng yếu với chế độ Ban Đêm. Xem ảnh, video và chơi game màu sắc chân thực trên màn hình Liquid Retina 6.1 inch. Trải nghiệm hiệu năng chưa từng có với chip A13 Bionic cho game, thực tế ảo tăng cường (AR) và chụp ảnh. Làm được nhiều việc hơn và sạc ít hơn với thời lượng pin bền bỉ cả ngày. Và bớt phải lo lắng nhờ khả năng chống nước ở độ sâu tối đa 2 mét trong vòng 30 phút."
+  },
+  {
+    "_id": { "$oid": "63610fc8383b8f3dfd0eab9c" },
+    "category": "iphone",
+    "imageURL": [
+      "https://firebasestorage.googleapis.com/v0/b/funix-way.appspot.com/o/xSeries%2FCCDN%2FReactJS%2FAssignment_Images%2FASM03_Resources%2Fiphone_12_3.jpeg?alt=media&token=56832bd5-c510-4760-923c-fae236c6712c",
+      "https://firebasestorage.googleapis.com/v0/b/funix-way.appspot.com/o/xSeries%2FCCDN%2FReactJS%2FAssignment_Images%2FASM03_Resources%2Fiphone_12_2.jpeg?alt=media&token=56f78317-be84-4f2e-a050-6a35f8cba356",
+      "https://firebasestorage.googleapis.com/v0/b/funix-way.appspot.com/o/xSeries%2FCCDN%2FReactJS%2FAssignment_Images%2FASM03_Resources%2Fiphone_12_1.jpeg?alt=media&token=6acaeb5d-1299-4bde-9e60-bee43b49570e",
+      "https://firebasestorage.googleapis.com/v0/b/funix-way.appspot.com/o/xSeries%2FCCDN%2FReactJS%2FAssignment_Images%2FASM03_Resources%2Fiphone_12_4.jpeg?alt=media&token=490d736a-05bd-4242-baf6-8479d9c0d11c"
+    ],
+    "long_desc": "Tính năng nổi bật\n\n• Màn hình Super Retina XDR 6.1 inch1\n\n• Ceramic Shield, chất liệu kính bền chắc nhất từng có trên điện thoại thông minh\n\n• A14 Bionic, chip nhanh nhất từng có trên điện thoại thông minh\n\n• Hệ thống camera kép tiên tiến 12MP với các camera Ultra Wide và Wide; chế độ Ban Đêm, Deep Fusion,\n\nHDR thông minh thế hệ 3, khả năng quay video HDR Dolby Vision 4K\n\n• Camera trước TrueDepth 12MP với chế độ Ban Đêm và khả năng quay video HDR Dolby Vision 4K\n\n• Khả năng chống nước đạt chuẩn IP68 đứng đầu thị trường3\n\n• iOS 14 với các tiện ích được thiết kế lại trên Màn Hình Chính, Thư Viện Ứng Dụng hoàn toàn mới, App\n\nClips cùng nhiều tính năng khác",
+    "name": "Apple iPhone 12 64GB",
+    "price": "15790000",
+    "short_desc": "iPhone 12 đẩy nhanh mọi tác vụ với A14 Bionic, chip nhanh nhất trên điện thoại thông minh. \n\nHệ thống camera kép mới. Với màn hình Super Retina XDR tuyệt đẹp, nay bạn có thể chiêm ngưỡng từng chi tiết hình ảnh vô cùng sống động."
+  },
+  {
+    "_id": { "$oid": "63610fdc383b8f3dfd0eab9e" },
+    "category": "ipad",
+    "imageURL": [
+      "https://cdn.tgdd.vn/Products/Images/522/248096/ipad-air-5-150322-044250.jpeg",
+      "https://cdn.tgdd.vn/Products/Images/522/248096/ipad-air-5-150322-044252.jpeg",
+      "https://cdn.tgdd.vn/Products/Images/522/248096/ipad-air-5-150322-044254.jpeg",
+      "https://cdn.tgdd.vn/Products/Images/522/248096/Slider/ipad-air-5637867629018282670.jpg"
+    ],
+    "long_desc": "Tính năng nổi bật\n•\tThiết kế sang trọng - Thiết kế phẳng ở 4 cạnh, màu sắc tươi trẻ\n•\tMàn hình cho trải nghiệm chân thực - Tấm nền Retina IPS LCD 10.9 inches, chân thực và sắc nét\n•\tKhả năng kết nối phụ kiện tuyệt vời - Dễ dàng kết nối Magic Keyboard và Apple Pencil biến iPad của bạn thành chiếc Laptop hoàn hảo\n•\tKhả năng xử lý tác vụ đáng kinh ngạc - Con chip M1 vô cùng mạnh mẽ\n•\tCamera sắc nét 12MP, tính năng Smart HDR nổi bật\n•\tXDung lượng cao, sử dụng thời gian dài\n•\tThiết kế tinh tế, màn hình Liquid Retina 10.9 inch\n•\tKết nối Apple Pencil 2, Kết nối bàn phím rời, Micro kép, Mở khóa bằng vân tay, Nam châm và sạc cho Apple Pencil.",
+    "name": "iPad Air 5 M1 Wifi 64GB",
+    "price": "16490000",
+    "short_desc": "Mỗi khi một chiếc iPad mới vừa ra lò như một cơn chấn động thật sự bùng nổ. Đến năm 2022, chúng ta lại tiếp tục bùng nổ với chiếc iPad mới mang tên iPad Air 5 với nhiều cải tiến đáng giá.So với thế hệ iPad Air 4 hồi năm 2020 thì chiếc iPad Air 2022 được mong đợi sẽ có nhiều cải tiến, trong đó nổi bật là màn hình, vi xử lý, dung lượng pin, bộ nhớ trong.\n"
+  },
+  {
+    "_id": { "$oid": "63610fef383b8f3dfd0eaba0" },
+    "category": "ipad",
+    "imageURL": [
+      "https://firebasestorage.googleapis.com/v0/b/funix-way.appspot.com/o/xSeries%2FCCDN%2FReactJS%2FAssignment_Images%2FASM03_Resources%2Fipad_gen9_1.jpeg?alt=media&token=507fbf42-b8db-4007-b294-397b95cce7ba",
+      "https://firebasestorage.googleapis.com/v0/b/funix-way.appspot.com/o/xSeries%2FCCDN%2FReactJS%2FAssignment_Images%2FASM03_Resources%2Fipad_gen9_2.jpeg?alt=media&token=2be93dfc-b78a-4798-8dbf-316405853a6b",
+      "https://firebasestorage.googleapis.com/v0/b/funix-way.appspot.com/o/xSeries%2FCCDN%2FReactJS%2FAssignment_Images%2FASM03_Resources%2Fipad_gen9_3.jpeg?alt=media&token=6edb581f-6727-4501-9bce-d7f4b806007b",
+      "https://firebasestorage.googleapis.com/v0/b/funix-way.appspot.com/o/xSeries%2FCCDN%2FReactJS%2FAssignment_Images%2FASM03_Resources%2Fipad_gen9_4.jpeg?alt=media&token=eb62cfc6-f091-46f7-b793-5018bc02d711"
+    ],
+    "long_desc": "Tính năng nổi bật\n•\tMàn hình Retina 10.2 inch sống động với True Tone\n•\tChip A13 Bionic với Neural Engine\n•\tCamera sau Wide 8MP, camera trước Ultra Wide 12MP với tính năng Trung Tâm Màn Hình\n•\tỔ lưu trữ lên tới 256GB\n•\tLoa stereo\n•\tXác thực bảo mật với Touch ID\n•\tWi-Fi 802.11ac và dữ liệu di động LTE chuẩn Gigabit (2)\n•\tThời lượng pin lên tới 10 giờ (3)\n•\tCổng kết nối Lightning để sạc và kết nối phụ kiện\n•\tTương thích với Apple Pencil (thế hệ thứ 1) và Smart Keyboard (1)\n•\tiPadOS 15 sở hữu sức mạnh độc đáo, dễ sử dụng và được thiết kế cho tính đa năng của iPad\n",
+    "name": "Apple iPad Gen 9th Wi-Fi 64GB",
+    "price": "8990000",
+    "short_desc": "Mạnh mẽ. Dễ sử dụng. Đa năng. iPad mới có màn hình Retina tuyệt đẹp, chip A13 Bionic mạnh mẽ, camera trước Ultra Wide có tính năng Trung Tâm Màn Hình, tương thích với Apple Pencil và Smart Keyboard (1). iPad giúp bạn dễ dàng làm được nhiều việc hơn nữa. Tất cả tính năng với mức giá ấn tượng.\n"
+  },
+  {
+    "_id": { "$oid": "6361100c383b8f3dfd0eaba2" },
+    "category": "ipad",
+    "imageURL": [
+      "https://cdn.tgdd.vn/Products/Images/522/238623/ipad-pro-m1-11-inch-01.jpg",
+      "https://cdn.tgdd.vn/Products/Images/522/238623/ipad-pro-m1-11-inch-07.jpg",
+      "https://cdn.tgdd.vn/Products/Images/522/238623/ipad-pro-m1-11-inch-wifi-256gb-2021-7.jpg",
+      "https://cdn.tgdd.vn/Products/Images/522/238623/ipad-pro-m1-11-inch-03.jpg"
+    ],
+    "long_desc": "Tính năng nổi bật\n•\tĐỉnh cao công nghệ màn hình - Màn hình Liquid Retina, tần số quét 120Hz, True- Tone\n•\tHiệu năng như máy tính - Vi xử lý M1, 8GB RAM\n•\tChụp ảnh chất lượng, hỗ trợ AR tiên tiến - Camera kép 12MP, cảm biến LiDAR cao cấp\n•\tKết nối tốc độ cao - Wifi 6.siêu tốc, sạc nhanh Thunderbolt 4\n•\tThiết kế vuông vức sang trọng, màn hình 11 inch\n•\tHỗ trợ Apple Pencil cùng hệ điều hành iPad OS mượt mà\n•\tCụm camera kép cho hình ảnh chất lượng\n•\tThời lượng pin ấn tượng hỗ trợ sạc nhanh qua cổng Type-C\n•\tChipset M1 của iPad Pro M1 được trang bị 8 nhân CPU, 8 nhân GPU và 16 nhân xử lý AI đem đến hiệu xuất nhanh hơn 50% và khả năng đồ hoạ là 40% so với thế hệ iPad cũ.",
+    "name": "Apple iPad Pro 11 2021 M1 WiFi 128GB",
+    "price": "19490000",
+    "short_desc": "Apple gây ấn tượng khi cho ra mắt dòng laptop MacBook trang bị chip Apple M1, đem đến một hiệu năng xử lý vượt trội. Giờ đây nó đã xuất hiện trên chiếc máy tính bảng iPad Pro M1 11 inch Wifi 256GB (2021) chắc chắn sẽ tiếp nối sự thành công từ dòng laptop ra mắt trước đó.\n"
+  },
+  {
+    "_id": { "$oid": "63611027383b8f3dfd0eaba4" },
+    "category": "ipad",
+    "imageURL": [
+      "https://firebasestorage.googleapis.com/v0/b/funix-way.appspot.com/o/xSeries%2FCCDN%2FReactJS%2FAssignment_Images%2FASM03_Resources%2Fipad_air_1.jpeg?alt=media&token=79be0859-23b8-4915-8f92-4bf087ab3186",
+      "https://firebasestorage.googleapis.com/v0/b/funix-way.appspot.com/o/xSeries%2FCCDN%2FReactJS%2FAssignment_Images%2FASM03_Resources%2Fipad_air_2.jpeg?alt=media&token=e58dc089-ce13-4415-80bd-1b40383591e5",
+      "https://firebasestorage.googleapis.com/v0/b/funix-way.appspot.com/o/xSeries%2FCCDN%2FReactJS%2FAssignment_Images%2FASM03_Resources%2Fipad_air_3.jpeg?alt=media&token=e6070fc1-f33d-4b2d-a979-71c756978ebf",
+      "https://firebasestorage.googleapis.com/v0/b/funix-way.appspot.com/o/xSeries%2FCCDN%2FReactJS%2FAssignment_Images%2FASM03_Resources%2Fipad_air_4.jpeg?alt=media&token=92368c98-a863-40c4-9b25-c628e8321e0a"
+    ],
+    "long_desc": "Tính năng nổi bật\n\n•\tMàn hình Liquid Retina 10.9 inch sắc nét với True Tone và dải màu rộng P31\n\n•\tChip A14 Bionic với Neural Engine\n\n•\tXác thực bảo mật với Touch ID\n\n•\tCamera sau 12MP, camera trước FaceTime HD 7MP\n\n•\tHiện có các màu Bạc, Xám Bạc, Hồng Kim, Xanh Lá và Xanh Da Trời\n\n•\tÂm thanh stereo rộng\n\n•\tWi-Fi 6 (802.11ax) và dữ liệu di động LTE Gigabit4\n\n•\tThời lượng pin lên đến 10 giờ3\n\n•\tCổng kết nối USB-C để sạc và kết nối phụ kiện\n\n•\tHỗ trợ Magic Keyboard, Smart Keyboard Folio và Apple Pencil (thế hệ thứ 2)2 \n\n•\tiPadOS 14 mang đến cho bạn các chức năng mới được thiết kế dành riêng cho iPad\n\n",
+    "name": "Apple iPad Air 4 10.9 inch Wi-Fi + Cellular 64GB",
+    "price": "15990000",
+    "short_desc": "iPad Air hoàn toàn mới. Linh hoạt hơn bao giờ hết. Màn hình Liquid Retina 10.9 inch sắc nét với dải màu rộng cho bạn trải nghiệm thị giác vô cùng sống động và chi tiết khi xem ảnh hay video cũng như khi chơi game trên thiết bị.1 Chip A14 Bionic tích hợp công nghệ Neural Engine nổi bật với hiệu năng vận hành mạnh mẽ và các tính năng máy học cao cấp, hỗ trợ tối đa tác vụ biên tập video 4K, soạn tập tin thuyết trình đẹp mắt hay thiết kế mô hình 3D - mọi tác vụ thật dễ dàng. Thiết bị giờ đã hỗ trợ Magic Keyboard và Apple Pencil (thế hệ thứ 2),2 Touch ID nhanh nhạy, dễ sử dụng, bảo mật cao, camera sau 12MP và camera FaceTime HD 7MP, cổng kết nối USB-C hỗ trợ sạc và phụ kiện, thời lượng pin bền bỉ cả ngày,3 công nghệ Wi-Fi 6 và LTE Gigabit cực nhanh.4 Với iPad Air trong tay, bạn được sở hữu một công cụ vô cùng mạnh mẽ, đủ sức hiện thực hóa mọi ý tưởng của bản thân.\n\n"
+  },
+  {
+    "_id": { "$oid": "63611042383b8f3dfd0eaba6" },
+    "category": "ipad",
+    "imageURL": [
+      "https://cdn.tgdd.vn/Products/Images/522/248091/ipad-mini-6-14.jpg",
+      "https://cdn.tgdd.vn/Products/Images/522/248091/ipad-mini-6-13.jpg",
+      "https://cdn.tgdd.vn/Products/Images/522/248091/ipad-mini-6-10.jpg",
+      "https://cdn.tgdd.vn/Products/Images/522/248091/ipad-mini-6-17.jpg"
+    ],
+    "long_desc": "Tính năng nổi bật\n\n•\tCấu hình mạnh mẽ hơn, đa nhiệm tốt hơn\n\n•\tSử dụng chip xử lý Apple A15 Bionic 6 nhân mang đến hiệu năng mạnh mẽ hơn và tiết kiệm khoảng 15% năng lượng so với A14 Bionic.\n\n•\tVới khả năng xử lý đồ họa nhanh hơn tới 80%, iPad mini 6 giúp bạn đắm mình vào bất cứ điều gì bạn làm. Trải nghiệm AR, chơi các trò chơi đồ họa cao hay các tác vụ 3D đều sẽ được xử lý mượt mà.\n\n•\tHỗ trợ bút Apple Pencil 2 có thể gắn từ tính và sạc không dây vô cùng tiện lợi, hỗ trợ ghi chú nhanh hay thỏa mãn đam mê thiết kế trên màn hình iPad mini.\n\n•\tiPad mini 6 trang bị kết nối WiFi 6 cho tốc độ giao tiếp kết nối cực nhanh và ổn định, truyền tải dữ liệu tốc độ cao không tốn nhiều thời gian chờ.\n\n•\tPhiên bản này Apple cho người dùng đến 4 gam màu thời thượng để lựa chọn gồm Xám, Hồng, Tím và Trắng phù hợp cho nhiều cá nhân với độ tuổi, phong cách khác nhau.\n\n•\tQuay phim, chụp ảnh sắc nét, video call chất lượng cao\n\n•\tiPad mini 6 có dung lượng pin 19.3 Wh cho thời lượng sử dụng tốt, đảm bảo đáp ứng nhu cầu sử dụng thiết bị tần suất cao suốt ngày dài.\n\n",
+    "name": "Apple iPad mini 6 WIìi 64GB",
+    "price": "15990000",
+    "short_desc": "Sau thời gian dài chờ đợi thì iPad mini 6 WiFi 64GB cũng đã được Apple trình làng với thiết kế vừa quen thuộc vừa mới lạ, máy có nhiều cải tiến trong cấu hình lẫn phần mềm nhằm gia tăng lợi ích sử dụng, mang lại sự hài lòng cao hơn cho người dùng khi lựa chọn.\n\n"
+  },
+  {
+    "_id": { "$oid": "6361105c383b8f3dfd0eaba8" },
+    "category": "macbook",
+    "imageURL": [
+      "https://cdn.tgdd.vn/Products/Images/44/289441/vi-vn-apple-macbook-air-m2-2022-16gb-ab-6.jpg",
+      "https://cdn.tgdd.vn/Products/Images/44/289441/vi-vn-apple-macbook-air-m2-2022-16gb-ab-4.jpg",
+      "https://cdn.tgdd.vn/Products/Images/44/289441/vi-vn-apple-macbook-air-m2-2022-16gb-ab-2.jpg",
+      "https://cdn.tgdd.vn/Products/Images/44/289441/vi-vn-apple-macbook-air-m2-2022-16gb-ab-3.jpg"
+    ],
+    "long_desc": "Tính năng nổi bật\n•Khám phá nguồn sức mạnh từ dòng chip thế hệ mới\n• Ngoại hình thời thượng, biểu tượng cho sự hoàn mỹ\n• Bàn phím Magic Key với dãy phím F chức năng giúp cho thao tác soạn thảo hay nhập liệu được dễ dàng và tiện lợi hơn.\n• Tính năng bảo mật vân tay được tích hợp với phím nguồn của máy vừa giúp bạn mở máy nhanh chóng chỉ bằng một chạm vừa củng cố thêm hệ thống bảo mật cũng như quyền riêng tư, hạn chế tối đa việc bị mất thông tin cá nhân của người dùng. \n•Màn hình Retina sắc nét cho mọi trải nghiệm hoàn hảo\n•Hệ thống âm thanh vòm đa chiều Dolby Atmos, Spatial Audio kết hợp cùng 4 loa mang đến trọn vẹn những trải nghiệm giải trí chân thực với chất âm sống động, âm bass to rõ, độ khuếch đại âm thanh lớn giúp bạn hòa mình vào những bản tình ca du dương hay các tập phim hành động kịch tính.",
+    "name": "Apple MacBook Air M2 2022 16GB/512GB/10-core GPU (Z1610003L) ",
+    "price": "46990000",
+    "short_desc": "MacBook Air M2 2022 một lần nữa đã khẳng định vị thế hàng đầu của Apple trong phân khúc laptop cao cấp - sang trọng vào giữa năm 2022 khi sở hữu phong cách thiết kế thời thượng, đẳng cấp cùng sức mạnh bộc phá đến từ bộ vi xử lý Apple M2 mạnh mẽ.\n\n"
+  },
+  {
+    "_id": { "$oid": "63611073383b8f3dfd0eabaa" },
+    "category": "macbook",
+    "imageURL": [
+      "https://cdn.tgdd.vn/Products/Images/44/253582/apple-macbook-pro-16-m1-max-2021-5-3.jpg",
+      "https://cdn.tgdd.vn/Products/Images/44/253582/apple-macbook-pro-16-m1-max-2021-8.jpg",
+      "https://cdn.tgdd.vn/Products/Images/44/253582/apple-macbook-pro-16-m1-max-2021-10.jpg",
+      "https://cdn.tgdd.vn/Products/Images/44/253582/apple-macbook-pro-16-m1-max-2021-11.jpg",
+      "https://cdn.tgdd.vn/Products/Images/44/253582/apple-macbook-pro-16-m1-max-2021-4-1.jpg"
+    ],
+    "long_desc": "Tính năng nổi bật\n•Con chip Apple M1 Max mang một sức mạnh siêu cấp với cấu trúc 10 nhân và tốc độ băng trong lên đến 400 GB/s memory bandwidth cho hiệu suất của Apple nhanh hơn khoảng 70% so với thế hệ tiền nhiệm Apple M1\n• Bộ nhớ RAM 32 GB đa nhiệm cực mượt mà, tăng tốc độ truy xuất dữ liệu, giảm thời gian chờ, mọi thao tác được phản hồi tức thời, bạn có thể dễ dàng mở nhiều phần mềm thiết kế để chỉnh sửa nhiều tệp hình ảnh phức tạp vừa render.\n• Dung lượng khủng SSD 1 TB mang đến không gian bộ nhớ rộng rãi, thoải mái cho bạn lưu trữ tài liệu cá nhân, kho hình ảnh, video sáng tạo của bản thân và hàng loạt bộ phim hấp dẫn mà bạn yêu thích, đồng thời mở video 8K ngay lập tức hoặc lưu trữ hàng trăm ảnh RAW cùng một lúc.\n• Hệ điều hành Mac OS giúp giao diện máy tính có độ thẩm mỹ cao, tạo cảm hứng làm việc ngay cho người dùng mỗi khi bật máy lên, tiện thao tác, dễ sử dụng và kho ứng dụng đồ sộ. \n• Không gian hiển thị rộng cho hình ảnh siêu nét\n•Hệ thống âm thanh 6 loa bao gồm 4 loa trầm triệt tiêu lực cho âm sắc sâu hơn, lấp đầy căn phòng với âm trầm nhiều hơn tới 80% và 2 loa tweeter hiệu suất cao phát ra giọng hát rõ ràng hơn, đầy đủ, sống động hơn. Wide stereo sound kết hợp công nghệ Dolby Atmos giúp bạn đắm chìm trong âm nhạc, phim ảnh với âm thanh rõ ràng, chi tiết, đầy đủ chiều rộng và chiều sâu. \n• Thiết kế hiện đại hơn, cuốn hút hơn. \n• Đa dạng kết nối, bảo mật cao",
+    "name": "Apple MacBook Pro 16 M1 Max 2021 10 core-CPU/32GB/1TB SSD/32 core-GPU (MK1A3SA/A) ",
+    "price": "85990000",
+    "short_desc": "Thật ấn tượng với Apple MacBook Pro 16 M1 Max 2021 mang trên mình bộ áo mới độc đáo, cuốn hút mọi ánh nhìn cùng màn hình tai thỏ lần đầu tiên xuất hiện ở dòng Mac và ẩn bên trong là bộ cấu hình mạnh mẽ tuyệt vời đến từ con chip M1 Max tân tiến.\n\n"
+  },
+  {
+    "_id": { "$oid": "6361108d383b8f3dfd0eabac" },
+    "category": "macbook",
+    "imageURL": [
+      "https://cdn.tgdd.vn/Products/Images/44/253703/apple-macbook-pro-14-m1-pro-2021-10-core-cpu-4-1.jpg",
+      "https://cdn.tgdd.vn/Products/Images/44/253703/apple-macbook-pro-14-m1-pro-2021-10-core-cpu-5-1.jpg",
+      "https://cdn.tgdd.vn/Products/Images/44/253703/apple-macbook-pro-14-m1-pro-2021-10-core-cpu-10.jpg",
+      "https://cdn.tgdd.vn/Products/Images/44/253703/apple-macbook-pro-14-m1-pro-2021-10-core-cpu-11.jpg"
+    ],
+    "long_desc": "Tính năng nổi bật\n•Bộ cấu hình vượt trội, phục vụ tối đa cho công việc\n• Màn hình 14.2 inch viền mỏng cùng thiết kế tai thỏ độc đáo lần đầu tiên được trang bị ở dòng MacBook Pro kết hợp tấm nền Liquid Retina XDR display có độ phân giải (3024 x 1964) được hiệu chuẩn, tham chiếu chuyên nghiệp cung cấp hình ảnh sắc nét, chân thực với các điểm nổi bật tinh tế, chi tiết đáng kinh ngạc và màu sắc tươi mới, sống động.\n• Hỗ trợ FaceTime HD camera độ phân giải 1080p với ống kính có độ rộng hơn cho phép thu hình ảnh trực tuyến chất lượng, 3 micro chất lượng phòng thu có độ ồn thấp hơn tới 60% ghi lại ngay cả những âm thanh tinh tế nhất, định hướng chùm tia để giọng nói của bạn luôn to và rõ ràng và khi thực hiện các cuộc gọi video để học tập, làm việc từ xa qua các phần mềm Google Meet, Line, Zoom,... \n• Cảm biến vân tay tích hợp trên máy có một vòng xúc giác hướng dẫn ngón tay mở khóa máy Mac của bạn một cách nhanh chóng, dễ dàng và an toàn thông tin chỉ với một chạm cũng như đăng nhập vào ứng dụng hay thanh toán online,...  \n• Hỗ trợ chuẩn kết nối không dây Bluetooth 5.0 và Wi-Fi 6 (802.11ax) cho bạn băng tần cao 9.6 Gbps, với tốc độ tăng 40% từ đó giúp người dùng có thể xem được các video 4K một cách mượt mà.",
+    "name": "Apple MacBook Pro 14 inch M1 Pro 2021  ",
+    "price": "58190000",
+    "short_desc": "Apple MacBook Pro 14 inch M1 Pro 2021 gây ấn tượng mạnh khi mang trên mình vẻ ngoài có nhiều cải tiến mới, độc đáo và cuốn hút mọi ánh nhìn cùng hiệu năng mạnh mẽ, đỉnh cao đến từ con chip M1 Pro hiện đại, đáp ứng tối ưu nhu cầu sử dụng cho giới công nghệ, kỹ thuật cũng như cá nhà sáng tạo nội dung chuyên nghiệp..\n\n"
+  },
+  {
+    "_id": { "$oid": "636110a4383b8f3dfd0eabae" },
+    "category": "watch",
+    "imageURL": [
+      "https://firebasestorage.googleapis.com/v0/b/funix-way.appspot.com/o/xSeries%2FCCDN%2FReactJS%2FAssignment_Images%2FASM03_Resources%2Fwatch_1_4.jpeg?alt=media&token=c5642ff3-ec27-4af1-bca2-87a5606f9fee",
+      "https://firebasestorage.googleapis.com/v0/b/funix-way.appspot.com/o/xSeries%2FCCDN%2FReactJS%2FAssignment_Images%2FASM03_Resources%2Fwatch_1_3.jpeg?alt=media&token=b73a1072-0246-44c9-b694-6686683fe845",
+      "https://firebasestorage.googleapis.com/v0/b/funix-way.appspot.com/o/xSeries%2FCCDN%2FReactJS%2FAssignment_Images%2FASM03_Resources%2Fwatch_1_2.jpeg?alt=media&token=0eda1185-e2f6-4afc-bad3-4403fc406bfe",
+      "https://firebasestorage.googleapis.com/v0/b/funix-way.appspot.com/o/xSeries%2FCCDN%2FReactJS%2FAssignment_Images%2FASM03_Resources%2Fwatch_1_1.jpeg?alt=media&token=9d77761d-9008-4002-bdd3-4cfafcde735f"
+    ],
+    "long_desc": "Tính năng nổi bật\n•        Phiên bản GPS cho phép bạn nhận cuộc gọi và trả lời tin nhắn ngay từ cổ tay\n•        Theo dõi nhịp tim bất cứ lúc nào với ứng dụng Nhịp Tim\n•        Nhận thông báo về nhịp tim nhanh và chậm\n•        Màn hình Retina Luôn Bật sáng hơn 2,5 lần lúc ở ngoài trời khi bạn hạ cổ tay xuống\n•        SiP S6 nhanh hơn tới 20 phần trăm so với Series 5\n•        5GHz Wi-Fi và chip U1 Ultra-Wideband\n•        Theo dõi hoạt động hàng ngày của bạn trên Apple Watch và xem xu hướng của bạn trong ứng dụng Thể Dục trên iPhone\n•        Đo lường các hoạt động thể dục của bạn như chạy, đi bộ, đạp xe, tập yoga, bơi lội và khiêu vũ\n•        Thiết kế chống thấm nước khi bơi lội (1)\n•        Đồng bộ nhạc và podcast yêu thích\n•        La bàn được tích hợp sẵn cùng các số đo độ cao theo thời gian thực\n•        Có thể phát hiện nếu bạn bị té ngã mạnh, rồi tự động gọi dịch vụ cứu hộ khẩn cấp giúp bạn\n•        SOS Khẩn Cấp giúp bạn nhận được sự trợ giúp ngay từ cổ tay (2)\n•        watchOS 7 sở hữu tính năng theo dõi giấc ngủ, chỉ đường khi đi xe đạp và mặt đồng hồ có thể tùy chỉnh mới\n•        Vỏ nhôm có thêm nhiều màu mới",
+    "name": "Apple Watch Series 6 40mm GPS Sport Band",
+    "price": "9090000",
+    "short_desc": "Apple Watch Series 6 có thể cảnh báo bạn nếu nhịp tim nhanh hay chậm bất thường, cũng như đo lường nhịp tim hiện tại. Xem các chỉ số tập luyện của bạn trên màn hình Retina Luôn Bật đã được cải tiến sáng hơn 2,5 lần lúc ở ngoài trời khi bạn hạ cổ tay xuống. Thiết lập thói quen đi ngủ và theo dõi giấc ngủ. Trả lời cuộc gọi và tin nhắn ngay từ cổ tay của bạn. Đây là thiết bị tối ưu cho cuộc sống khỏe mạnh hơn, năng động hơn, kết nối nhiều hơn\n\n"
+  },
+  {
+    "_id": { "$oid": "636110b8383b8f3dfd0eabb0" },
+    "category": "watch",
+    "imageURL": [
+      "https://firebasestorage.googleapis.com/v0/b/funix-way.appspot.com/o/xSeries%2FCCDN%2FReactJS%2FAssignment_Images%2FASM03_Resources%2Fwatch_2_1.jpeg?alt=media&token=6585e4e6-801a-4b15-9dee-692523cc25f0",
+      "https://firebasestorage.googleapis.com/v0/b/funix-way.appspot.com/o/xSeries%2FCCDN%2FReactJS%2FAssignment_Images%2FASM03_Resources%2Fwatch_2_2.jpeg?alt=media&token=36a9ed1c-364d-4ef8-8c2f-9a59749ab057",
+      "https://firebasestorage.googleapis.com/v0/b/funix-way.appspot.com/o/xSeries%2FCCDN%2FReactJS%2FAssignment_Images%2FASM03_Resources%2Fwatch_2_4.jpeg?alt=media&token=680502bd-d359-4095-8b37-841e9fd35a2d",
+      "https://firebasestorage.googleapis.com/v0/b/funix-way.appspot.com/o/xSeries%2FCCDN%2FReactJS%2FAssignment_Images%2FASM03_Resources%2Fwatch_2_3.jpeg?alt=media&token=223685d5-5fe6-47e4-8ba1-1c6a485c7730"
+    ],
+    "long_desc": "ĐẶC ĐIỂM NỔI BẬT\n- Chức năng màn hình luôn bật giữ cho chức năng xem giờ luôn hoạt động,tiết kiệm pin hơn\n- Thoải mái sử dụng ở hồ bơi hay ngoài trời với chuẩn kháng bụi IP6X ,chống nước đến 50m\n- Đo nhịp tim,oxy trong máu,theo dõi giấc ngủ cùng nhiều tính năng sức khoẻ tích hợp sẵn\n- Trải nghiệm âm nhạc với bộ nhớ trong 32GB cùng khả năng kết nối tai nghe bluetooth\n- Cổng sạc Type C,sạc nhanh 45 phút cho 80% pin",
+    "name": "Apple Watch Series 7 41mm GPS Sport Band",
+    "price": "10590000",
+    "short_desc": "Trải nghiệm hoàn hảo trên màn hình lớn tràn viền\nApple Watch Series 7 sở hữu màn hình lớn hơn tới 20% so với thế hệ Series 6, hơn 50% so với Series 3, nhưng điều đặc biệt là kích thước tổng thể của đồng hồ không hề thay đổi. Để có được kết quả này, đội ngũ kỹ sư của Apple đã thiết kế lại hoàn toàn màn hình giúp giảm tới 40% diện tích phần viền, tạo thành một màn hình tràn viền đầy quyến rũ, nơi bạn xem được nhiều nội dung hơn, hình ảnh hấp dẫn hơn."
+  },
+  {
+    "_id": { "$oid": "636110dd383b8f3dfd0eabb2" },
+    "category": "watch",
+    "imageURL": [
+      "https://cdn.tgdd.vn/Products/Images/7077/289804/apple-watch-s8-41mm-5.jpg",
+      "https://cdn.tgdd.vn/Products/Images/7077/289804/apple-watch-s8-41mm-3.jpg",
+      "https://cdn.tgdd.vn/Products/Images/7077/289804/apple-watch-s8-41mm-1-1.jpg",
+      "https://cdn.tgdd.vn/Products/Images/7077/289804/apple-watch-s8-41mm-8.jpg"
+    ],
+    "long_desc": "ĐẶC ĐIỂM NỔI BẬT\n- Thiết kế thời thượng, kiểu dáng hiện đại\n- Mặt đồng hồ được làm từ kính cường lực Ion-X strengthened cao cấp giúp bảo vệ màn hình OLED bên trong và đảm bảo độ hiển rõ nét, sống động với các chi tiết màu sắc được thể hiện gần như hoàn hảo. \n- Hỗ trợ nhiều tiện ích sức khỏe\n- Apple Watch S8 GPS 41mm hỗ trợ bạn trong luyện tập thể dục thể thao với khả năng tính quãng đường chạy, đếm số bước chân,... Đây sẽ là một tính năng cực kỳ hữu ích với những bạn yêu thích môn chạy bộ, đạp xe,...\n- Với chiếc smartwatch này trên tay, bạn có thể xem, xác định vị trí của mình một cách nhanh chóng, đồng thời chỉ dẫn đường đi khi cần với hệ thống 5 vệ tinh phổ biến toàn cầu là GPS, GLONASS, Galileo, QZSS, BDS. \n - Apple Watch S8 có thể phát hiện và cảnh báo va chạm tai nạn xe hơi nhờ con quay hồi chuyển và gia tốc kế. Khi phát hiện sự cố, đồng hồ có thể tự động kết nối bạn với các dịch vụ khẩn cấp hoặc các liên hệ theo thiết lập trước đó của bạn để nhận sự trợ giúp.",
+    "name": "Apple Watch S8 GPS 41mm",
+    "price": "11690000",
+    "short_desc": "Thiết kế nhà Apple thì lúc nào cũng đẹp và sang chảnh. Đến với phiên bản Apple Watch S8 GPS 41mm lần này cũng vậy, về cơ bản, thiết kế không quá khác biệt các dòng sản phẩm trước. Bạn vẫn bắt gặp kiểu mặt đồng hồ với khung viền mềm mại bo tròn, ôm sát mặt đồng hồ."
+  },
+  {
+    "_id": { "$oid": "636110f5383b8f3dfd0eabb4" },
+    "category": "watch",
+    "imageURL": [
+      "https://cdn.tgdd.vn/Products/Images/7077/289611/apple-watch-ultra-alpine-size-s-2.jpg",
+      "https://cdn.tgdd.vn/Products/Images/7077/289611/apple-watch-ultra-alpine-size-s-5.jpg",
+      "https://cdn.tgdd.vn/Products/Images/7077/289611/apple-watch-ultra-alpine-size-s-4.jpg",
+      "https://cdn.tgdd.vn/Products/Images/7077/289611/apple-watch-ultra-alpine-size-s-7.jpg"
+    ],
+    "long_desc": "ĐẶC ĐIỂM NỔI BẬT\n- Sở hữu diện mạo thường thấy của các sản phẩm Apple Watch nhưng với phiên bản Ultra, Apple đã trang bị khung viền Titanium cùng mặt kính Sapphire cao cấp làm tăng thêm sự bền bỉ cho chiếc thiết bị. Hơn thế nữa, độ bền đạt tiêu chuẩn quân đội MIL-STD 810H cũng giúp bảo vệ đồng hồ tốt hơn trong những hành trình khắc nghiệt, hạn chế hư hỏng.\n- Apple Watch Ultra được trang bị GPS tần số kép cùng hệ thống 5 vệ tinh định vị toàn cầu là GPS, GLONASS, BDS, QZSS, Galileo, cung cấp độ chính xác vượt trội cả khi ở những môi trường khó định vị như rừng núi hay thành phố đông đúc. \n- Theo dõi sức khoẻ sát sao\n- Công nghệ sạc nhanh, chế độ Nguồn điện thấp kéo dài thời gian sử dụng \n - Khả năng chống nước đạt Chứng nhận EN13319, chống bụi IPX6 \n Nhờ vào eSIM được tích hợp, người dùng sẽ không cần phải lúc nào cũng mang theo điện thoại bên cạnh mà vẫn có thể đàm thoại, nhắn tin chỉ với chiếc smartwatch trên cổ tay của mình.",
+    "name": "Apple Watch Ultra LTE 49mm dây Trail size M/L",
+    "price": "23990000",
+    "short_desc": "Trong sự kiện ra mắt sản phẩm thường niên vào tháng 9/2022, ngoài dòng smartwatch tiêu chuẩn và phiên bản SE, Apple cũng đã trình làng dòng smartwatch hoàn toàn mới của hãng mang tên Apple Watch Ultra dành riêng cho các tín đồ yêu thích thể thao, khám phá."
+  },
+  {
+    "_id": { "$oid": "63611108383b8f3dfd0eabb6" },
+    "category": "airpod",
+    "imageURL": [
+      "https://firebasestorage.googleapis.com/v0/b/funix-way.appspot.com/o/xSeries%2FCCDN%2FReactJS%2FAssignment_Images%2FASM03_Resources%2Fairpod_1_1.jpeg?alt=media&token=33b2ebdd-086c-4b8e-9241-0b566ca66754",
+      "https://firebasestorage.googleapis.com/v0/b/funix-way.appspot.com/o/xSeries%2FCCDN%2FReactJS%2FAssignment_Images%2FASM03_Resources%2Fairpod_1_2.jpeg?alt=media&token=b6201728-3058-489e-aa49-df59c4255833",
+      "https://firebasestorage.googleapis.com/v0/b/funix-way.appspot.com/o/xSeries%2FCCDN%2FReactJS%2FAssignment_Images%2FASM03_Resources%2Fairpod_1_4.jpeg?alt=media&token=cb5d7f1f-03a2-409a-8ee9-1783b37e6b56",
+      "https://firebasestorage.googleapis.com/v0/b/funix-way.appspot.com/o/xSeries%2FCCDN%2FReactJS%2FAssignment_Images%2FASM03_Resources%2Fairpod_1_3.jpeg?alt=media&token=3c036bd6-b76a-48a7-8cd2-a58290cd1763"
+    ],
+    "long_desc": "Đặc điểm nổi bật\n- Kiểu dáng hiện đại, gọn đẹp, đeo thoải mái đến bất kỳ nơi nào. \n- Âm thanh vòm sống động cùng Spatial audio và chip H1 mạnh mẽ.\n- Kết nối không dây Bluetooth 5.0 mượt mà xa đến 10 m. \n- Điều chỉnh âm thanh phù hợp ống tai của bạn nhờ hỗ trợ Adaptive EQ.\n- Tai nghe cho thời gian nghe nhạc 6 giờ, hộp sạc 24 giờ.\n- Hỗ trợ sạc nhanh, cho thời gian sử dụng 1 giờ chỉ với 5 phút sạc.\n- Hộp sạc hỗ trợ sạc không dây chuẩn Qi, tiện lợi khi sạc lại.\n- Trang bị chuẩn chống nước IPX4, bảo vệ tai nghe an toàn dưới mưa nhỏ và mồ hôi.",
+    "name": "Apple AirPods 3rd gen",
+    "price": "4390000",
+    "short_desc": "Thiết kế sang trọng, nhiều thay đổi so với thế hệ trước\nTai nghe AirPods 3 sở hữu nhiều thiết kế tương tự với thế hệ AirPods Pro tuy nhiên không có phần nút tai. Thiết kế này mang lại cảm giá thoải mái khi sử dụng cho người dùng, phù hợp với đa số kích thước tai. Đặc biệt, thiết kế này thích hợp với người dùng thường xuyên đổ mồ hôi mà không hề gây khó chịu. Phần thân tai cũng được làm ngắn hơn, gọn nhẹ hơn."
+  },
+  {
+    "_id": { "$oid": "63611121383b8f3dfd0eabb8" },
+    "category": "airpod",
+    "imageURL": [
+      "https://cdn.tgdd.vn/Products/Images/54/253802/bluetooth-airpods-pro-magsafe-charge-apple-mlwk3-231021-120615.jpg",
+      "https://cdn.tgdd.vn/Products/Images/54/253802/bluetooth-airpods-pro-magsafe-charge-apple-mlwk3-231021-120617.jpg",
+      "https://cdn.tgdd.vn/Products/Images/54/253802/bluetooth-airpods-pro-magsafe-charge-apple-mlwk3-231021-120618.jpg",
+      "https://cdn.tgdd.vn/Products/Images/54/253802/bluetooth-airpods-pro-magsafe-charge-apple-mlwk3-231021-120620.jpg"
+    ],
+    "long_desc": "Đặc điểm nổi bật\n- Tận hưởng chất âm cuốn hút, được điều chỉnh hoàn hảo cho đôi tai bạn với chip H1 hiện đại cùng công nghệ Adaptive EQ \n- Kiểm soát hoạt động tai nghe dễ dàng mọi lúc nhờ công nghệ chống ồn chủ động và xuyên âm\n- Chất lượng tín hiệu kết nối không dây vượt trội với công nghệ Bluetooth 5.0 \n- Cung cấp thời gian sử dụng đáng kinh ngạc với tai nghe cho 5 giờ, hộp sạc tới 24 giờ.\n- Vận động ngoài trời tùy ý với xếp hạng chống nước IPX4\n-Cảm ứng lực nhạy bén tùy chỉnh các chức năng chính xác\n- Hộp sạc hỗ trợ sạc không dây chuẩn Qi, tiện lợi khi sạc lại.\n- - Chống ồn chủ động (Active Noise Cancellation): Tai nghe sẽ loại bỏ âm thanh môi trường bằng cách sử dụng 2 micro, 1 micro hướng ra ngoài và 1 micro hướng vào trong, để tạo hiệu ứng khử tiếng ồn. Nhờ đó đôi tai bạn không bị xao nhãng bởi các tạp âm xung quanh, cho bạn chìm đắm vào thế giới âm nhạc của riêng mình hoặc thực hiện cuộc gọi quan trọng tập trung hơn. Xuyên âm (Transparency mode): Ở chế độ này, AirPods Pro cho phép âm thanh bên ngoài lọt vào tai bạn, tạo sự kết nối với môi trường xung quanh nhanh chóng, micro hướng ra ngoài và hướng vào trong hoàn tác hiệu ứng cách ly âm thanh của các nút tai silicone để bạn nghe thấy mọi thứ một cách tự nhiên. Hỗ trợ Conversation Boost tập trung AirPods Pro vào người đang nói chuyện trực tiếp trước mặt bạn để bạn nghe rõ họ nói gì ngay cả khi xung quanh rất ồn ào.",
+    "name": "AirPods Pro MagSafe Charge Apple MLWK3",
+    "price": "5390000",
+    "short_desc": "Tai nghe Bluetooth AirPods Pro MagSafe Charge Apple MLWK3 trắng được chế tác với vẻ ngoài tinh giản, gam màu trắng trẻ trung, sáng đẹp, phối hợp tuyệt vời với mọi trang phục từ đời thường đến công sở, dự tiệc của bạn. "
+  },
+  {
+    "_id": { "$oid": "63611135383b8f3dfd0eabba" },
+    "category": "airpod",
+    "imageURL": [
+      "https://cdn.tgdd.vn/Products/Images/54/250701/bluetooth-airpods-3-211021-065125.jpg",
+      "https://cdn.tgdd.vn/Products/Images/54/250701/bluetooth-airpods-3-211021-065129.jpg",
+      "https://cdn.tgdd.vn/Products/Images/54/250701/bluetooth-airpods-3-211021-065134.jpg",
+      "https://cdn.tgdd.vn/Products/Images/54/250701/bluetooth-airpods-3-211021-065136.jpg"
+    ],
+    "long_desc": "Đặc điểm nổi bật\n- Kiểu dáng hiện đại, gọn đẹp, đeo thoải mái đến bất kỳ nơi nào.  \n- Âm thanh vòm sống động cùng Spatial audio và chip H1 mạnh mẽ.\n- Chất lượng tín hiệu kết nối không dây vượt trội với công nghệ Bluetooth 5.0 \n- Điều chỉnh âm thanh phù hợp ống tai của bạn nhờ hỗ trợ Adaptive EQ. \n- Tai nghe cho thời gian nghe nhạc 6 giờ và thời gian sử dụng hộp sạc 30 giờ.\n-Hỗ trợ sạc nhanh, cho thời gian sử dụng 1 giờ chỉ với 5 phút sạc. \n- Hộp sạc hỗ trợ sạc không dây chuẩn Qi, tiện lợi khi sạc lại.\n- -Trang bị chuẩn chống nước IPX4, bảo vệ tai nghe an toàn dưới mưa nhỏ và mồ hôi. \n- Điều khiển cảm ứng với cảm biến lực cho bạn kiểm soát hoạt động tai nghe nhiều hơn",
+    "name": "AirPods 3 Wireless Charge Apple MME73 ",
+    "price": "4890000",
+    "short_desc": "Airpods 3 có thiết kế tương tự như AirPods Pro nhưng không còn phần eartips, đường viền và thân ngắn hơn cho âm thanh truyền tải đến tai tối ưu. Bề mặt tai nghe Bluetooth Apple phủ sắc trắng thời thượng, được làm từ các vật liệu tái chế với độ bền cao, bảo vệ môi trường sống của con người.  "
+  },
+  {
+    "_id": { "$oid": "63611154383b8f3dfd0eabbc" },
+    "category": "mouse",
+    "imageURL": [
+      "https://cdn.tgdd.vn/Products/Images/86/251787/chuot-bluetooth-apple-mk2e3-trang-221021-053217.jpg",
+      "https://cdn.tgdd.vn/Products/Images/86/251787/chuot-bluetooth-apple-mk2e3-trang-221021-053219.jpg",
+      "https://cdn.tgdd.vn/Products/Images/86/251787/chuot-bluetooth-apple-mk2e3-trang-131221-014636.jpg",
+      "https://cdn.tgdd.vn/Products/Images/86/251787/chuot-bluetooth-apple-mk2e3-trang-221021-053223.jpg"
+    ],
+    "long_desc": "Đặc điểm nổi bật\n- Công nghệ Multi-Touch, cổng sạc Lightning. \n- Thiết kế siêu nhẹ và tính ứng dụng cao hơn.\n- Sản phẩm nhỏ gọn, trọng lượng chỉ khoảng 80 g, bề mặt đa cảm ứng giúp cho bạn sử dụng nhanh nhạy đa điểm hơn. \n- Tương thích máy Mac hỗ trợ Bluetooth với hệ điều hành MacOS. \n- TChuột Apple MK2E3 làm việc hiệu quả cùng các thiết bị vận hành trên hệ điều hành MacOS \n-Sử dụng kết nối không dây Bluetooth, đường truyền nhanh và ổn định trong 10 m \n- Độ phân giải của cảm biến là 1500 DPI, giúp thao tác rê chuột mượt mà\n- Điều khiển chạm vuốt thông minh trên bề mặt Multi-Touch \n- Pin sạc với dung lượng tốt, dùng bền bỉ đến khoảng 2 tháng",
+    "name": "Chuột Bluetooth Apple MK2E3",
+    "price": "2240000",
+    "short_desc": "Chuột Apple MK2E3 làm việc hiệu quả cùng các thiết bị vận hành trên hệ điều hành MacOS. Thiết kế chuột mỏng nhẹ, tinh tế, thêm sang trọng cho bàn làm việc"
+  },
+  {
+    "_id": { "$oid": "63611187383b8f3dfd0eabbe" },
+    "category": "mouse",
+    "imageURL": [
+      "https://cdn.tgdd.vn/Products/Images/86/251903/ban-di-chuot-magic-trackpad-2-apple-1.jpg",
+      "https://cdn.tgdd.vn/Products/Images/86/251903/ban-di-chuot-magic-trackpad-2-apple-2.jpg",
+      "https://cdn.tgdd.vn/Products/Images/86/251903/ban-di-chuot-magic-trackpad-2-apple-3.jpg",
+      "https://cdn.tgdd.vn/Products/Images/86/251903/ban-di-chuot-magic-trackpad-2-apple-4.jpg"
+    ],
+    "long_desc": "Đặc điểm nổi bật\n • Bàn di chuột Apple được tạo với độ nghiêng nhẹ, giúp thao tác di chuột trở nên thoải mái hơn. \n• Các cảm biến bên dưới bề mặt bàn di chuột phát hiện những khác biệt nhỏ về lượng áp lực bạn tác động để mang lại nhiều chức năng và chính xác hơn cho từng cử chỉ ngón tay của bạn.\n• Bàn di chuột được trang bị cảm ứng đa điểm, người dùng có thể dễ dàng phóng to, thu nhỏ, cuộn, xoay,... kiểm soát và tương tác tốt với nội dung trên màn hình. \n• Magic Trackpad 2 tự động ghép nối với iMac của bạn, vì vậy bạn có thể bắt đầu làm việc ngay lập tức khi khởi động thiết bị. \n• Pin có thể sạc lại qua cáp USB-C đến Lightning sẽ cung cấp năng lượng cho bàn Magic Trackpad 2 trong khoảng một tháng hoặc hơn giữa các lần sạc.",
+    "name": "Bàn di chuột Apple Magic Trackpad 2 MK2D3 Bạc",
+    "price": "2990000",
+    "short_desc": "Bàn di chuột Apple Magic Trackpad 2 MK2D3 Bạc được thiết kế với kích thước nhỏ gọn nhằm đáp ứng nhu cầu di chuyển dễ dàng và thuận tiện."
+  },
+  {
+    "_id": { "$oid": "6361119e383b8f3dfd0eabc0" },
+    "category": "keyboard",
+    "imageURL": [
+      "https://didongviet.vn/pub/media/wysiwyg/A54-5G/thiet-ke-apple-magic-keyboard-touch-id-20201.jpg",
+      "https://didongviet.vn/pub/media/wysiwyg/A54-5G/ket-noi-khong-day-apple-magic-keyboard-touch-id-20201.jpg",
+      "https://didongviet.vn/pub/media/wysiwyg/A54-5G/touch-id-tren-apple-magic-keyboard-touch-id-20201.jpg",
+      "https://help.apple.com/assets/6244BE6AE83C5279F505C060/6244BE75E83C5279F505C0C5/vi_VN/881ef1cf9c1bd492962fb117cfb3990f.png"
+    ],
+    "long_desc": "Đặc điểm nổi bật\n • Thiết kế hiện đại và có tính di động cực cao nhờ vào độ mỏng và trọng lượng nhẹ, có thể dễ dàng để nó vào trong balo hay túi xách và mang đi khắp nơi \n• Bổ sung bàn phím số tích hợp hỗ trợ nhập dữ liệu, tính toán và điều hướng diễn ra nhanh chóng \n• Hoàn thiện từ chất liệu nhôm cao cấp mang đến cho sản phẩm diện mạo cao cấp, sang trọng và khả năng chống va đập tốt \n• Cơ chế cắt kéo bên dưới mỗi phím cũng như hành trình phím được tối ưu hoá và cấu hình thấp mang đến trải nghiệm đánh máy chính xác và êm ái \n• Tích hợp phím cảm biến vân tay Touch ID tương thích với đa số thiết bị Apple, giúp tăng cường bảo mật đến mức tối ưu \n• Trang bị kết nối không dây Bluetooth hoặc thông qua cáp sạc Lightning hỗ trợ vừa sạc vừa kết nối \n• Sử dụng pin sạc Li-ion cho khả năng sử dụng lên tới 30 ngày cho mỗi lần sạc.",
+    "name": "Bàn phím Apple Magic Keyboard + Touch ID/Phím số 2021 MK2C3",
+    "price": "2990000",
+    "short_desc": "Được ra mắt cùng lúc với iMac 24 inch, bàn phím Apple Magic Keyboard Touch ID phím số 2021 là một trong những phụ kiện với đầy đủ các chức năng. Đây là chiếc bàn phím đầu tiên mà người dùng có thể đăng bằng bằng Touch ID ngay trên bàn phím."
+  },
+  {
+    "_id": { "$oid": "636111b4383b8f3dfd0eabc2" },
+    "category": "keyboard",
+    "imageURL": [
+      "https://didongviet.vn/pub/media/wysiwyg/A54-5G/thiet-ke-apple-magic-keyboard-touch-id-20201.jpg",
+      "https://didongviet.vn/pub/media/wysiwyg/A54-5G/ket-noi-khong-day-apple-magic-keyboard-touch-id-20201.jpg",
+      "https://didongviet.vn/pub/media/wysiwyg/A54-5G/touch-id-tren-apple-magic-keyboard-touch-id-20201.jpg",
+      "https://help.apple.com/assets/6244BE6AE83C5279F505C060/6244BE75E83C5279F505C0C5/vi_VN/881ef1cf9c1bd492962fb117cfb3990f.png"
+    ],
+    "long_desc": "Đặc điểm nổi bật\n • Thiết kế hiện đại và có tính di động cực cao nhờ vào độ mỏng và trọng lượng nhẹ, có thể dễ dàng để nó vào trong balo hay túi xách và mang đi khắp nơi \n• Bổ sung bàn phím số tích hợp hỗ trợ nhập dữ liệu, tính toán và điều hướng diễn ra nhanh chóng \n• Hoàn thiện từ chất liệu nhôm cao cấp mang đến cho sản phẩm diện mạo cao cấp, sang trọng và khả năng chống va đập tốt \n• Cơ chế cắt kéo bên dưới mỗi phím cũng như hành trình phím được tối ưu hoá và cấu hình thấp mang đến trải nghiệm đánh máy chính xác và êm ái \n• Tích hợp phím cảm biến vân tay Touch ID tương thích với đa số thiết bị Apple, giúp tăng cường bảo mật đến mức tối ưu \n• Trang bị kết nối không dây Bluetooth hoặc thông qua cáp sạc Lightning hỗ trợ vừa sạc vừa kết nối \n• Sử dụng pin sạc Li-ion cho khả năng sử dụng lên tới 30 ngày cho mỗi lần sạc.",
+    "name": "Bàn phím Apple Magic Keyboard + Touch ID/Phím số 2021 MK2C3",
+    "price": "2990000",
+    "short_desc": "Được ra mắt cùng lúc với iMac 24 inch, bàn phím Apple Magic Keyboard Touch ID phím số 2021 là một trong những phụ kiện với đầy đủ các chức năng. Đây là chiếc bàn phím đầu tiên mà người dùng có thể đăng bằng bằng Touch ID ngay trên bàn phím."
+  }
+]

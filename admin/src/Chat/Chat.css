@@ -1,0 +1,8 @@
+.active_user{
+    cursor: pointer !important;
+}
+
+.active_user:hover{
+    color: rgb(92, 92, 253) !important;
+    transition: all .5s ease-in-out;
+}
