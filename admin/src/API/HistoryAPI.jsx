@@ -1,14 +1,14 @@
 import axiosClient from './axiosClient';
 
 const HistoryAPI = {
-  getHistoryAPI: query => {
-    const url = `/histories${query}`;
-    return axiosClient.get(url);
-  },
-
   getDetail: id => {
     const url = `/orders/${id}`;
     return axiosClient.get(url);
+  },
+
+  updateOrder: (id, data) => {
+    const url = `/orders/${id}`;
+    return axiosClient.put(url, data);
   },
 
   getAll: () => {

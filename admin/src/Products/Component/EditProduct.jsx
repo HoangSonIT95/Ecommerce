@@ -1,6 +1,6 @@
-import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
+import ProductAPI from '../../API/ProductAPI';
 
 const imageStyle = {
   position: 'relative',
@@ -19,11 +19,14 @@ const EditProduct = () => {
   const { productId } = useParams();
 
   const [product, setProduct] = useState({});
+  const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get(`/products/${productId}`).then(res => {
-      setProduct(res.data);
-    });
+    const getDetail = async productId => {
+      const response = await ProductAPI.getDetail(productId);
+      setProduct(response);
+    };
+    getDetail(productId);
   }, []);
 
   const handleChange = e => {
@@ -37,7 +40,7 @@ const EditProduct = () => {
     }));
   };
 
-  const handleSubmit = e => {
+  const handleSubmit = async e => {
     e.preventDefault();
     const files = e.target.image.files;
 
@@ -48,25 +51,17 @@ const EditProduct = () => {
     data.append('name', product.name);
     data.append('price', product.price);
     data.append('category', product.category);
+    data.append('stock', product.stock);
     data.append('imageURL', product.imageURL);
     data.append('short_desc', product.short_desc);
     data.append('long_desc', product.long_desc);
 
-    axios
-      .put(`/products/${productId}`, data, {
-        headers: {
-          'Content-Type': 'multipart/form-data',
-        },
-        withCredentials: true,
-      })
-      .then(res => {
-        window.location.href = '/products';
-      })
-      .catch(err => console.log(err.response));
+    await ProductAPI.updateProduct(productId, data);
+    navigate('/products');
   };
 
   return (
-    <div className='page-wrapper'>
+    <div className='page-wrapper d-block'>
       <div className='page-breadcrumb'>
         <div className='row'>
           <div className='col-12'>
@@ -109,6 +104,18 @@ const EditProduct = () => {
                   placeholder='Enter Category'
                   required
                   defaultValue={product.category}
+                  onChange={handleChange}
+                />{' '}
+              </div>
+              <div className='form-group'>
+                <label htmlFor='stock'>Stock</label>
+                <input
+                  type='number'
+                  id='stock'
+                  className='form-control'
+                  placeholder='Enter Stock'
+                  defaultValue={product.stock}
+                  required
                   onChange={handleChange}
                 />{' '}
               </div>
@@ -168,6 +175,10 @@ const EditProduct = () => {
           </div>
         </div>
       </div>
+      <footer className='footer text-center text-muted'>
+        All Rights Reserved by Adminmart. Designed and Developed by
+        <a href='https://www.facebook.com/nunhivole/'> Hoang Son</a>.
+      </footer>
     </div>
   );
 };

@@ -1,5 +1,4 @@
 import express from 'express';
-import { verifyToken, verifyUser } from './../middlewares/verifyToken.js';
 import {
   createOrder,
   getOrdersUser,
@@ -7,16 +6,18 @@ import {
   getOrdersAll,
   getEarningTotal,
   getCountOrder,
+  updateOrder,
 } from '../controller/orders.js';
+import { verifyAdmin, verifyToken } from '../middlewares/verifyToken.js';
 
 const router = express.Router();
 
-router.post('/', createOrder);
-router.get('/', getOrdersUser);
-router.get('/all', getOrdersAll);
-router.get('/earningTotal', getEarningTotal);
-router.get('/countOrder', getCountOrder);
-router.get('/:orderId', getOrder);
+router.post('/', verifyToken, createOrder);
+router.get('/', verifyToken, getOrdersUser);
+router.get('/all', verifyAdmin, getOrdersAll);
+router.get('/earningTotal', verifyAdmin, getEarningTotal);
+router.get('/countOrder', verifyAdmin, getCountOrder);
+router.get('/:orderId', verifyToken, getOrder);
+router.put('/:orderId', verifyAdmin, updateOrder);
 
 export default router;
-// module.exports = router;

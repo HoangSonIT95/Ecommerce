@@ -38,7 +38,7 @@ function Products(props) {
                 <Link className='d-block' to={`/detail/${value._id}`}>
                   <div className='badge text-white badge-'></div>
                   <img
-                    className='img-fluid w-100'
+                    className='img-fluid'
                     src={value.imageURL[0]}
                     alt='...'
                   />
@@ -46,9 +46,9 @@ function Products(props) {
                 <div className='product-overlay'>
                   <ul className='mb-0 list-inline'>
                     <li className='list-inline-item m-0 p-0'>
-                      <a className='btn btn-sm btn-outline-dark' href='#'>
+                      <span className='btn btn-sm btn-outline-dark'>
                         <i className='far fa-heart'></i>
-                      </a>
+                      </span>
                     </li>
                     <li className='list-inline-item m-0 p-0'>
                       <Link

@@ -24,13 +24,13 @@ function App() {
         <Header />
         <Switch>
           <ScrollToWrap>
-            <Route exact path='/' component={Home} />{' '}
-            <Route path='/detail/:id' component={Detail} />{' '}
-            <Route path='/cart' component={Cart} />{' '}
-            <Route path='/signin' component={SignIn} />{' '}
-            <Route path='/signup' component={SignUp} />{' '}
-            <Route path='/checkout' component={Checkout} />{' '}
-            <Route path='/history' component={History} />{' '}
+            <Route exact path='/' component={Home} />
+            <Route path='/detail/:id' component={Detail} />
+            <Route path='/cart' component={Cart} />
+            <Route path='/signin' component={SignIn} />
+            <Route path='/signup' component={SignUp} />
+            <Route path='/checkout' component={Checkout} />
+            <Route path='/history' component={History} />
             <Route path='/shop' component={Shop} />
           </ScrollToWrap>
         </Switch>

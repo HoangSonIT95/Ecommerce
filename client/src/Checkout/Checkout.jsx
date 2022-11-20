@@ -1,19 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import queryString from 'query-string';
-import CartAPI from '../API/CartAPI';
-import UserAPI from '../API/UserAPI';
-import CheckoutAPI from '../API/CheckoutAPI';
 import convertMoney from '../convertMoney';
 import './Checkout.css';
 
-// import io from 'socket.io-client';
-import axios from 'axios';
 import { Link } from 'react-router-dom';
-// const socket = io('http://localhost:5000');
+import HistoryAPI from '../API/HistoryAPI';
+import alertify from 'alertifyjs';
 
 function Checkout(props) {
-  const userId = localStorage.getItem('id_user');
-  const [user, setUser] = useState();
+  const user = JSON.parse(localStorage.getItem('user'));
 
   const [carts, setCarts] = useState([]);
 
@@ -21,16 +15,12 @@ function Checkout(props) {
 
   const [success, setSuccess] = useState(false);
 
-  const [load, setLoad] = useState(false);
-
   //Hàm này dùng để gọi API và render số sản phẩm
   useEffect(() => {
-    if (userId) {
+    if (user) {
       const fetchData = async () => {
-        const response = await axios.get(`/users/${userId}`);
-        setUser(response.data);
-        setCarts(response.data.cart.items);
-        getTotal(response.data.cart.items);
+        setCarts(user.cart.items);
+        getTotal(user.cart.items);
       };
       fetchData();
     }
@@ -48,7 +38,7 @@ function Checkout(props) {
   }
 
   //Check Validation
-  const handleSubmit = e => {
+  const handleSubmit = async e => {
     e.preventDefault();
     const dataOrder = {
       fullName: e.target.fullName.value,
@@ -58,60 +48,16 @@ function Checkout(props) {
       total: total,
     };
 
-    axios
-      .post('/orders', dataOrder, {
-        withCredentials: true,
-      })
-      .then(res => {
-        alert('Order success!');
-        // window.location.href = "http://localhost:3000/orders";
-        // return res.data;
-      })
-      .catch(err => console.log(err));
+    const response = await HistoryAPI.postOrder(dataOrder);
+    if (response) {
+      alertify.set('notifier', 'position', 'bottom-left');
+      alertify.success('Bạn Đã Đặt Hàng Thành Công!');
+      setSuccess(true);
+    }
   };
 
-  //Hàm này bắt đầu gửi Email xác nhận đơn hàng
-  //   useEffect(() => {
-  //     if (load) {
-  //       const sendMail = async () => {
-  //         const params = {
-  //           to: email,
-  //           fullname: fullname,
-  //           phone: phone,
-  //           address: address,
-  //           idUser: localStorage.getItem('id_user'),
-  //         };
-
-  //         const query = '?' + queryString.stringify(params);
-
-  //         const response = await CheckoutAPI.postEmail(query);
-
-  //         console.log(response);
-  //       };
-
-  //       sendMail();
-
-  //       const data = localStorage.getItem('id_user');
-
-  //       // Gửi socket lên server
-  //       socket.emit('send_order', data);
-
-  //       //Dùng setTimeout delay 3s
-  //       //Sau 4s nó sẽ thực hiện
-  //       setTimeout(() => {
-  //         setSuccess(!success);
-  //         setLoad(!load);
-  //       }, 4000);
-  //     }
-  //   }, [load]);
   return (
     <div>
-      {load && (
-        <div className='wrapper_loader'>
-          <div className='loader'></div>
-        </div>
-      )}
-
       <div className='container'>
         <section className='py-5 bg-light'>
           <div className='container'>
@@ -245,7 +191,7 @@ function Checkout(props) {
                         <strong className='text-uppercase small font-weight-bold'>
                           Total
                         </strong>
-                        <span>{convertMoney(total)}</span>
+                        <span>{convertMoney(total)} VND</span>
                       </li>
                     </ul>
                   </div>

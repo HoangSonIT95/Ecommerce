@@ -3,9 +3,11 @@ import ProductAPI from '../API/ProductAPI';
 import Image from '../Share/img/Image';
 import convertMoney from '../convertMoney';
 import { Link } from 'react-router-dom';
+import { ColorRing } from 'react-loader-spinner';
 
 function Home() {
   const [products, setProducts] = useState([]);
+  const [load, setLoad] = useState(true);
 
   //Fetch Product
   useEffect(() => {
@@ -13,6 +15,7 @@ function Home() {
       const response = await ProductAPI.getAPI();
       const data = response.splice(0, 8);
       setProducts(data);
+      setLoad(false);
     };
 
     fetchData();
@@ -163,50 +166,52 @@ function Home() {
               </p>
               <h2 className='h5 text-uppercase mb-4'>Top trending products</h2>
             </header>
-            <div className='row'>
-              {products &&
-                products.map(value => (
-                  <div className='col-xl-3 col-lg-4 col-sm-6' key={value._id}>
-                    <div className='product text-center'>
-                      <div className='position-relative mb-3'>
-                        <div className='badge text-white badge-'></div>
-                        <a
-                          className='d-block'
-                          href={`#product_${value._id}`}
-                          data-toggle='modal'
-                        >
-                          <img
-                            className='img-fluid'
-                            src={value.imageURL[0]}
-                            alt=''
-                          />
-                        </a>
-                        <div className='product-overlay'>
-                          <ul className='mb-0 list-inline'>
-                            {/* <li className="list-inline-item m-0 p-0"><a className="btn btn-sm btn-outline-dark" href="#"><i className="far fa-heart"></i></a></li> */}
-                            {/* <li className="list-inline-item m-0 p-0">
-                                                            <Link className="btn btn-sm btn-dark" to={`/detail/${value._id}`}>
-                                                                Add to cart
-                                                            </Link>
-                                                        </li> */}
-                          </ul>
+            {load ? (
+              <ColorRing
+                visible={true}
+                height='80'
+                width='80'
+                ariaLabel='blocks-loading'
+                wrapperStyle={{}}
+                wrapperClass='blocks-wrapper'
+                colors={['#e15b64', '#f47e60', '#f8b26a', '#abbd81', '#849b87']}
+              />
+            ) : (
+              <div className='row'>
+                {products &&
+                  products.map(value => (
+                    <div className='col-xl-3 col-lg-4 col-sm-6' key={value._id}>
+                      <div className='product text-center'>
+                        <div className='position-relative mb-3'>
+                          <div className='badge text-white badge-'></div>
+                          <a
+                            className='d-block'
+                            href={`#product_${value._id}`}
+                            data-toggle='modal'
+                          >
+                            <img
+                              className='img-fluid'
+                              src={value.imageURL[0]}
+                              alt=''
+                            />
+                          </a>
                         </div>
+                        <h6>
+                          <Link
+                            className='reset-anchor'
+                            to={`/detail/${value._id}`}
+                          >
+                            {value.name}
+                          </Link>
+                        </h6>
+                        <p className='small text-muted'>
+                          {convertMoney(value.price)} VND
+                        </p>
                       </div>
-                      <h6>
-                        <Link
-                          className='reset-anchor'
-                          to={`/detail/${value._id}`}
-                        >
-                          {value.name}
-                        </Link>
-                      </h6>
-                      <p className='small text-muted'>
-                        {convertMoney(value.price)} VND
-                      </p>
                     </div>
-                  </div>
-                ))}
-            </div>
+                  ))}
+              </div>
+            )}
           </section>
           <section className='py-5 bg-light'>
             <div className='container'>

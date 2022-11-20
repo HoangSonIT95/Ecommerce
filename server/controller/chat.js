@@ -1,7 +1,19 @@
 import chatRoom from '../models/ChatRoom.js';
+import User from '../models/User.js';
+import jwt from 'jsonwebtoken';
+import { createError } from '../middlewares/error.js';
 
 export const newRoom = async (req, res, next) => {
   try {
+    const authHeader = req.get('Authorization');
+    if (authHeader) {
+      const token = authHeader && authHeader.split(' ')[1];
+      jwt.verify(token, process.env.ACCESS_TOKEN_SECRET, (err, user) => {
+        if (err) return next(createError(403, 'Token is not valid!'));
+        return (req.user = user);
+      });
+    }
+
     const newRoom = new chatRoom({
       userId: req.user ? req.user._id : '63689392b2104129d20c5720',
     });
@@ -23,7 +35,7 @@ export const getMessageByRoomId = async (req, res, next) => {
 
 export const addMessage = async (req, res, next) => {
   try {
-    if (req.body.message === '==END CHAT==') {
+    if (req.body.message === '/end') {
       await chatRoom.findByIdAndUpdate(req.body.roomId, {
         $set: {
           isEnd: true,

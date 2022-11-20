@@ -1,48 +1,23 @@
 import React, { useEffect, useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { addUser } from '../../Redux/Action/ActionCart';
-import { addSession } from '../../Redux/Action/ActionSession';
 
 import { Link } from 'react-router-dom';
 import LoginLink from '../../Authentication/LoginLink';
 import LogoutLink from '../../Authentication/LogoutLink';
 import Name from '../../Authentication/Name';
 
-function Header(props) {
+function Header() {
   const [active, setActive] = useState('Home');
+  const [isLogin, setIsLogin] = useState(false);
+  const [nameUser, setNameUser] = useState();
 
-  const dispatch = useDispatch();
-
-  //Sau khi F5 nó sẽ kiểm tra nếu phiên làm việc của Session vẫn còn thì nó sẽ tiếp tục
-  // đưa dữ liệu vào Redux
-  if (localStorage.getItem('id_user')) {
-    const action = addSession(localStorage.getItem('id_user'));
-    dispatch(action);
-  } else {
-    //Đưa idTemp vào Redux temp để tạm lưu trữ
-    localStorage.setItem('id_temp', 'abc999');
-    const action = addUser(localStorage.getItem('id_temp'));
-    dispatch(action);
-  }
-
-  //Get IdUser từ redux khi user đã đăng nhập
-  var idUser = useSelector(state => state.Session.idUser);
-
-  //Get idtemp từ redux khi user chưa đăng nhập
-  var idTemp = useSelector(state => state.Cart.id_User);
-
-  const [loginUser, setLoginUser] = useState(false);
-  const [nameUser, setNameUser] = useState(false);
+  const user = JSON.parse(localStorage.getItem('user'));
 
   useEffect(() => {
-    if (!idUser) {
-      setLoginUser(false);
-      setNameUser(false);
-    } else {
-      setLoginUser(true);
-      setNameUser(true);
+    if (user) {
+      setIsLogin(true);
+      setNameUser(user.fullName);
     }
-  }, [idUser]);
+  }, [user]);
 
   const handlerActive = value => {
     setActive(value);
@@ -94,13 +69,13 @@ function Header(props) {
           </ul>
           <ul className='navbar-nav ml-auto'>
             <li className='nav-item'>
-              <Link className='nav-link' to={`/cart`}>
+              <Link className='nav-link' to={user ? '/cart' : '/signin'}>
                 <i className='fas fa-dolly-flatbed mr-1 text-gray'></i>
                 Cart
               </Link>
             </li>
-            {nameUser ? <Name /> : ''}
-            {loginUser ? <LoginLink /> : <LogoutLink />}
+            {nameUser ? <Name nameUser={nameUser} /> : ''}
+            {isLogin ? <LoginLink /> : <LogoutLink />}
           </ul>
         </div>
       </nav>

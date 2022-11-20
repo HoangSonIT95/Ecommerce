@@ -11,7 +11,17 @@ const UserAPI = {
     return axiosClient.get(url);
   },
 
+  postSignIn: user => {
+    const url = '/auth/login';
+    return axiosClient.post(url, user);
+  },
+
   postSignUp: user => {
+    const url = '/auth/register';
+    return axiosClient.post(url, user);
+  },
+
+  postLogout: user => {
     const url = '/auth/register';
     return axiosClient.post(url, user);
   },

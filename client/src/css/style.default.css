@@ -163,6 +163,8 @@ button:active {
   -webkit-filter: grayscale(40%);
   filter: grayscale(40%);
   transition: all 0.3s;
+  height: 250px !important;
+  object-fit: scale-down;
 }
 
 .product-overlay {

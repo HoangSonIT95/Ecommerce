@@ -1,15 +1,15 @@
 import axiosClient from './axiosClient';
 
 const CommentAPI = {
-	getCommentProduct: (query) => {
-		const url = `/comment/${query}`;
-		return axiosClient.get(url);
-	},
+  getCommentProduct: productId => {
+    const url = `/comment/${productId}`;
+    return axiosClient.get(url);
+  },
 
-	postCommentProduct: (query) => {
-		const url = `/comment/send${query}`;
-		return axiosClient.post(url);
-	},
+  postCommentProduct: (productId, data) => {
+    const url = `/comment/send/${productId}`;
+    return axiosClient.post(url, data);
+  },
 };
 
 export default CommentAPI;

@@ -6,9 +6,9 @@ const ChatRoomsAPI = {
     return axiosClient.get(url);
   },
 
-  createNewRoom: () => {
+  createNewRoom: idUser => {
     const url = `/chat/newRoom`;
-    return axiosClient.post(url);
+    return axiosClient.post(url, idUser);
   },
 
   addMessage: body => {

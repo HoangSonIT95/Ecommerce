@@ -1,33 +1,26 @@
-import React, { useEffect, useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import UserAPI from '../API/UserAPI';
-import { addSession } from '../Redux/Action/ActionSession';
 import './Auth.css';
-import queryString from 'query-string';
-import CartAPI from '../API/CartAPI';
 import axios from 'axios';
+import UserAPI from '../API/UserAPI';
 
 function SignIn(props) {
   const [err, setErr] = useState('');
-  const onSubmit = e => {
+  const onSubmit = async e => {
     e.preventDefault();
     const user = {
       email: e.target.email.value,
       password: e.target.password.value,
     };
-    axios
-      .post('http://localhost:3000/auth/login', user, {
-        withCredentials: true,
-      })
+
+    await UserAPI.postSignIn(user)
       .then(res => {
-        localStorage.setItem('id_user', res.data._id);
-        // localStorage.setItem('accessToken', res.data.accessToken);
-        // localStorage.setItem('refreshToken', res.data.refreshToken);
+        localStorage.setItem('user', JSON.stringify(res.details));
+        localStorage.setItem('accessToken', res.accessToken);
         window.location.href = '/';
       })
       .catch(err => {
-        setErr(err.response.data);
+        setErr(err.response?.data);
       });
   };
 

@@ -13,7 +13,9 @@ import productsRoute from './routes/products.js';
 import cartsRoute from './routes/carts.js';
 import ordersRoute from './routes/orders.js';
 import chatRoute from './routes/chat.js';
+import commentRoute from './routes/comment.js';
 import connectMongoDBSession from 'connect-mongodb-session';
+// import { isAuth } from './middlewares/is-auth.js';
 
 const app = express();
 
@@ -33,32 +35,32 @@ const store = new MongoDBStore({
   collection: 'session',
 });
 
-app.use(
-  session({
-    secret: 'my secret',
-    resave: false,
-    saveUninitialized: false,
-    store: store,
-  })
-);
+// app.use(
+//   session({
+//     secret: 'my secret',
+//     resave: false,
+//     saveUninitialized: false,
+//     store: store,
+//   })
+// );
 
-app.use((req, res, next) => {
-  if (!req.session.userId) {
-    return next();
-  }
-  User.findById(req.session.userId)
-    .then(user => {
-      if (!user) {
-        return next();
-      }
-      req.user = user;
-      next();
-    })
+// app.use((req, res, next) => {
+//   if (!req.session.userId) {
+//     return next();
+//   }
+//   User.findById(req.session.userId)
+//     .then(user => {
+//       if (!user) {
+//         return next();
+//       }
+//       req.user = user;
+//       next();
+//     })
 
-    .catch(err => {
-      next(new Error(err));
-    });
-});
+//     .catch(err => {
+//       next(new Error(err));
+//     });
+// });
 
 app.use('/auth', authRoute);
 app.use('/users', usersRoute);
@@ -66,6 +68,7 @@ app.use('/products', productsRoute);
 app.use('/carts', cartsRoute);
 app.use('/orders', ordersRoute);
 app.use('/chat', chatRoute);
+app.use('/comment', commentRoute);
 
 app.use((error, req, res, next) => {
   const status = error.status || 500;

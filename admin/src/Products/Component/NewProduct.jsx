@@ -1,13 +1,16 @@
 import React, { useState } from 'react';
-import axios from 'axios';
+import ProductAPI from '../../API/ProductAPI';
+import { useNavigate } from 'react-router-dom';
 
 const NewProduct = () => {
   const [product, setProduct] = useState({});
+  const navigate = useNavigate();
+
   const handleChange = e => {
     setProduct(prev => ({ ...prev, [e.target.id]: e.target.value }));
   };
 
-  const handleSubmit = e => {
+  const handleSubmit = async e => {
     e.preventDefault();
     const files = e.target.image.files;
 
@@ -18,24 +21,16 @@ const NewProduct = () => {
     data.append('name', product.name);
     data.append('price', product.price);
     data.append('category', product.category);
+    data.append('stock', product.stock);
     data.append('short_desc', product.short_desc);
     data.append('long_desc', product.long_desc);
 
-    axios
-      .post('/products', data, {
-        headers: {
-          'Content-Type': 'multipart/form-data',
-        },
-        withCredentials: true,
-      })
-      .then(res => {
-        console.log('response', res.data);
-      })
-      .catch(err => console.log('error', err));
+    await ProductAPI.postProduct(data);
+    navigate('/products');
   };
 
   return (
-    <div className='page-wrapper'>
+    <div className='page-wrapper d-block'>
       <div className='page-breadcrumb'>
         <div className='row'>
           <div className='col-12'>
@@ -79,6 +74,17 @@ const NewProduct = () => {
                 />{' '}
               </div>
               <div className='form-group'>
+                <label htmlFor='stock'>Stock</label>
+                <input
+                  type='number'
+                  id='stock'
+                  className='form-control'
+                  placeholder='Enter Stock'
+                  required
+                  onChange={handleChange}
+                />{' '}
+              </div>
+              <div className='form-group'>
                 <label htmlFor='short_desc'>Short Description</label>
                 <textarea
                   className='form-control'
@@ -117,6 +123,10 @@ const NewProduct = () => {
           </div>
         </div>
       </div>
+      <footer className='footer text-center text-muted'>
+        All Rights Reserved by Adminmart. Designed and Developed by
+        <a href='https://www.facebook.com/nunhivole/'> Hoang Son</a>.
+      </footer>
     </div>
   );
 };

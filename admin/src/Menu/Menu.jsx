@@ -1,90 +1,83 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { Navigate, NavLink } from 'react-router-dom';
+import './Menu.css';
+import DashboardIcon from '@mui/icons-material/Dashboard';
+import MessageIcon from '@mui/icons-material/Message';
+import ManageAccountsIcon from '@mui/icons-material/ManageAccounts';
+import DevicesIcon from '@mui/icons-material/Devices';
+import ReceiptLongIcon from '@mui/icons-material/ReceiptLong';
+import { red } from '@mui/material/colors';
 
 function Menu(props) {
+  const [user, setUser] = useState({});
+
+  useEffect(() => {
+    const loadUser = JSON.parse(localStorage.getItem('user'));
+    if (!loadUser) {
+      return <Navigate to='/login' />;
+    }
+    setUser(loadUser);
+  }, []);
+
   return (
     <aside className='left-sidebar' data-sidebarbg='skin6'>
-      <div className='scroll-sidebar' data-sidebarbg='skin6'>
+      <div
+        className='scroll-sidebar  ps-container ps-theme-default ps-active-y'
+        data-sidebarbg='skin6'
+      >
         <nav className='sidebar-nav'>
           <ul id='sidebarnav'>
-            <li className='sidebar-item'>
-              {' '}
-              <a className='sidebar-link sidebar-link' href='/'>
-                <i data-feather='home' className='feather-icon'></i>
-                <span className='hide-menu'>Dashboard</span>
-              </a>
-            </li>
-            <li className='list-divider'></li>
-
-            <li className='nav-small-cap'>
-              <span className='hide-menu'>Components</span>
-            </li>
-            <li className='sidebar-item'>
-              {' '}
-              <a className='sidebar-link sidebar-link' href='/chat'>
-                <i data-feather='message-square' className='feather-icon'></i>
-                <span className='hide-menu'>Customer</span>
-              </a>
-            </li>
-
-            <li className='sidebar-item'>
-              {' '}
-              <a
-                className='sidebar-link has-arrow'
-                href='#'
-                aria-expanded='false'
-              >
-                <i data-feather='grid' className='feather-icon'></i>
-                <span className='hide-menu'>Tables </span>
-              </a>
-              <ul
-                aria-expanded='false'
-                className='collapse  first-level base-level-line'
-              >
+            {user.role === 'counselors' && (
+              <>
                 <li className='sidebar-item'>
-                  <a href='/users' className='sidebar-link'>
-                    <span className='hide-menu'>Datatables Users</span>
-                  </a>
+                  <NavLink to='/chat' className='sidebar-link'>
+                    <MessageIcon sx={{ color: red[500] }} />
+                    <span className='hide-menu ml-2'>Chat</span>
+                  </NavLink>
+                </li>
+              </>
+            )}{' '}
+            {user.role === 'admin' && (
+              <>
+                <li className='sidebar-item'>
+                  <NavLink className='sidebar-link' to='/'>
+                    <DashboardIcon sx={{ color: red[500] }} />
+                    <span className='hide-menu ml-2'> Dashboard</span>
+                  </NavLink>
+                </li>
+                <li className='list-divider'></li>
+
+                <li className='nav-small-cap'>
+                  <span className='hide-menu'>Components</span>
+                </li>
+
+                <li className='sidebar-item'>
+                  <NavLink to='/chat' className='sidebar-link'>
+                    <MessageIcon sx={{ color: red[500] }} />
+                    <span className='hide-menu ml-2'>Chat</span>
+                  </NavLink>
+                </li>
+
+                <li className='sidebar-item'>
+                  <NavLink to='/users' className='sidebar-link'>
+                    <ManageAccountsIcon sx={{ color: red[500] }} />
+                    <span className='hide-menu ml-2'>Users</span>
+                  </NavLink>
                 </li>
                 <li className='sidebar-item'>
-                  <a href='/products' className='sidebar-link'>
-                    <span className='hide-menu'>Datatables Products</span>
-                  </a>
+                  <NavLink to='/products' className='sidebar-link'>
+                    <DevicesIcon sx={{ color: red[500] }} />
+                    <span className='hide-menu ml-2'>Products</span>
+                  </NavLink>
                 </li>
                 <li className='sidebar-item'>
-                  <a href='/history' className='sidebar-link'>
-                    <span className='hide-menu'>Datatables History</span>
-                  </a>
+                  <NavLink to='/orders' className='sidebar-link'>
+                    <ReceiptLongIcon sx={{ color: red[500] }} />
+                    <span className='hide-menu ml-2'>Orders</span>
+                  </NavLink>
                 </li>
-              </ul>
-            </li>
-
-            <li className='list-divider'></li>
-            <li className='nav-small-cap'>
-              <span className='hide-menu'>Authentication</span>
-            </li>
-
-            <li className='sidebar-item'>
-              {' '}
-              <a
-                className='sidebar-link sidebar-link'
-                href='authentication-login1.html'
-                aria-expanded='false'
-              >
-                <i data-feather='lock' className='feather-icon'></i>
-                <span className='hide-menu'>Login</span>
-              </a>
-            </li>
-            <li className='sidebar-item'>
-              {' '}
-              <a
-                className='sidebar-link sidebar-link'
-                href='authentication-register1.html'
-                aria-expanded='false'
-              >
-                <i data-feather='lock' className='feather-icon'></i>
-                <span className='hide-menu'>Register</span>
-              </a>
-            </li>
+              </>
+            )}
           </ul>
         </nav>
       </div>

@@ -1,24 +1,16 @@
 import React, { useEffect, useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { deleteCart, updateCart } from '../Redux/Action/ActionCart';
 import ListCart from './Component/ListCart';
 import alertify from 'alertifyjs';
 import { Link, Redirect } from 'react-router-dom';
 import CartAPI from '../API/CartAPI';
-import queryString from 'query-string';
 import convertMoney from '../convertMoney';
-import axios from 'axios';
 
 function Cart(props) {
-  //listCart được lấy từ redux
-  const listCart = useSelector(state => state.Cart.listCart);
-
   const [cart, setCart] = useState([]);
 
-  const [total, setTotal] = useState();
+  const [total, setTotal] = useState(0);
 
-  const dispatch = useDispatch();
-
+  let user = JSON.parse(localStorage.getItem('user'));
   //State dùng để Load dữ liệu từ API
   const [loadData, setLoadData] = useState(false);
 
@@ -26,14 +18,13 @@ function Cart(props) {
   //Khi người dùng đã đăng nhập
   useEffect(() => {
     const fetchData = async () => {
-      if (localStorage.getItem('id_user')) {
-        const response = await axios.get('/carts');
-        setCart(response.data);
-        getTotal(response.data);
+      if (user) {
+        const response = await CartAPI.getCarts('/carts');
+
+        setCart(response);
+        getTotal(response);
         return;
       }
-      setCart(listCart);
-      getTotal(listCart);
     };
 
     fetchData();
@@ -53,66 +44,32 @@ function Cart(props) {
   }
 
   //Hàm này dùng để truyền xuống cho component con xử và trả ngược dữ liệu lại component cha
-  const onDeleteCart = productId => {
-    if (localStorage.getItem('id_user')) {
-      axios
-        .delete(`/carts/deleteProductCart/${productId}`)
-        .then(res => {
-          setLoadData(true);
-
-          alertify.set('notifier', 'position', 'bottom-left');
-          alertify.error('Bạn Đã Xóa Hàng Thành Công!');
-        })
-        .catch(err => console.log(err));
-    } else {
-      // user chưa đăng nhập
-
-      //Nếu không có phiên làm việc của Session User thì mình sẽ xử lý với Redux
-      const data = {
-        productId: productId,
-      };
-
-      //Đưa dữ liệu vào Redux
-      const action = deleteCart(data);
-      dispatch(action);
-
-      alertify.set('notifier', 'position', 'bottom-left');
-      alertify.error('Bạn Đã Xóa Hàng Thành Công!');
-
-      //set state loadRedux để nó load lại hàm useEffect để tiếp tục lấy dữ liệu từ redux
-      setLoadData(true);
+  const onDeleteCart = async productId => {
+    if (user) {
+      const response = await CartAPI.deleteToCart(productId);
+      if (response) {
+        user.cart = response;
+        localStorage.setItem('user', JSON.stringify(user));
+        setLoadData(true);
+        alertify.set('notifier', 'position', 'bottom-left');
+        alertify.error('Bạn Đã Xóa Hàng Thành Công!');
+      }
     }
   };
 
   //Hàm này dùng để truyền xuống cho component con xử và trả ngược dữ liệu lại component cha
-  const onUpdateCount = (productId, quantity) => {
-    if (localStorage.getItem('id_user')) {
+  const onUpdateCount = async (productId, quantity) => {
+    if (user) {
       // user đã đăng nhập
       //Sau khi nhận được dữ liệu ở component con truyền lên thì sẽ gọi API xử lý dữ liệu
-      axios
-        .patch('/carts/updateCart/', { productId, quantity })
-        .then(res => {
-          setLoadData(true);
-          alertify.set('notifier', 'position', 'bottom-left');
-          alertify.success('Bạn Đã Sửa Hàng Thành Công!');
-        })
-        .catch(err => console.log(err));
-    } else {
-      //Nếu không có phiên làm việc của Session User thì mình sẽ xử lý với Redux
-      const data = {
-        productId: productId,
-        quantity: quantity,
-      };
-
-      //Đưa dữ liệu vào Redux
-      const action = updateCart(data);
-      dispatch(action);
-
-      alertify.set('notifier', 'position', 'bottom-left');
-      alertify.success('Bạn Đã Sửa Hàng Thành Công!');
-
-      //set state loadRedux để nó load lại hàm useEffect để tiếp tục lấy dữ liệu từ redux
-      setLoadData(true);
+      const response = await CartAPI.putToCart({ productId, quantity });
+      if (response) {
+        user.cart = response;
+        localStorage.setItem('user', JSON.stringify(user));
+        setLoadData(true);
+        alertify.set('notifier', 'position', 'bottom-left');
+        alertify.success('Bạn Đã Sửa Hàng Thành Công!');
+      }
     }
   };
 
@@ -120,9 +77,9 @@ function Cart(props) {
   const [redirect, setRedirect] = useState(false);
 
   const onCheckout = () => {
-    if (!localStorage.getItem('id_user')) {
+    if (!user) {
       alertify.set('notifier', 'position', 'bottom-left');
-      alertify.error('Vui Lòng Kiểm Tra Lại Đăng Nhập!');
+      alertify.error('Vui Lòng Đăng Nhập!');
       return;
     }
 

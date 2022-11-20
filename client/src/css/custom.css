@@ -8,6 +8,7 @@ html {
   border: none;
 }
 
+
 .modal:target {
   display: block !important;
   background-color: rgba(175, 175, 175, 0.3);

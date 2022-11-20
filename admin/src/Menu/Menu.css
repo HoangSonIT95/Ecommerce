@@ -1,0 +1,14 @@
+a.sidebar-link.active {
+  border-radius: 0 60px 60px 0;
+  color: #fff !important;
+  background: linear-gradient(
+    to right,
+    #8971ea,
+    #7f72ea,
+    #7574ea,
+    #6a75e9,
+    #5f76e8
+  );
+  box-shadow: 0 7px 12px 0 rgb(95 118 232 / 21%);
+  opacity: 1;
+}

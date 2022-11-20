@@ -1,28 +1,17 @@
-import React, { useEffect, useState } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import UserAPI from '../API/UserAPI';
 
-const EditUser = () => {
-  const { userId } = useParams();
-
+const NewUser = () => {
   const [user, setUser] = useState({});
   const navigate = useNavigate();
-  useEffect(() => {
-    const getDetail = async () => {
-      const response = await UserAPI.getDetailData(userId);
-      setUser(response);
-    };
-    getDetail();
-  }, []);
-
   const handleChange = e => {
     setUser(prev => ({ ...prev, [e.target.id]: e.target.value }));
   };
 
   const handleSubmit = async e => {
     e.preventDefault();
-
-    const response = await UserAPI.putUpdateUser(userId, user);
+    const response = await UserAPI.postSignUp(user);
     if (response) {
       navigate('/users');
     }
@@ -42,7 +31,6 @@ const EditUser = () => {
                   id='fullName'
                   placeholder='Enter Full Name'
                   required
-                  defaultValue={user.fullName}
                   onChange={handleChange}
                 />
               </div>
@@ -54,7 +42,6 @@ const EditUser = () => {
                   id='email'
                   placeholder='Enter Email'
                   required
-                  defaultValue={user.email}
                   onChange={handleChange}
                 />
               </div>
@@ -76,7 +63,6 @@ const EditUser = () => {
                   id='phone'
                   placeholder='Enter Phone Number'
                   required
-                  defaultValue={user.phone}
                   onChange={handleChange}
                 ></input>
               </div>
@@ -89,18 +75,9 @@ const EditUser = () => {
                   required
                   onChange={handleChange}
                 >
-                  <option value='client' selected={user.role === 'client'}>
-                    client
-                  </option>
-                  <option
-                    value='counselors'
-                    selected={user.role === 'counselors'}
-                  >
-                    counselors
-                  </option>
-                  <option value='admin' selected={user.role === 'admin'}>
-                    admin
-                  </option>
+                  <option value='client'>client</option>
+                  <option value='counselors'>counselors</option>
+                  <option value='admin'>admin</option>
                 </select>
               </div>
 
@@ -119,4 +96,4 @@ const EditUser = () => {
   );
 };
 
-export default EditUser;
+export default NewUser;

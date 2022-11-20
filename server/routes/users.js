@@ -11,14 +11,14 @@ import { verifyAdmin, verifyUser } from '../middlewares/verifyToken.js';
 const router = express.Router();
 
 // Get All User
-router.get('/', getUsers);
+router.get('/', verifyAdmin, getUsers);
 // Get count user
-router.get('/count', getCountUser);
+router.get('/count', verifyAdmin, getCountUser);
 // Get Detail User
-router.get('/:userId', getDetailUser);
+router.get('/:userId', verifyUser, getDetailUser);
 // Update
-router.put('/:userId', updateUser);
+router.put('/:userId', verifyAdmin, updateUser);
 // Delete User
-router.delete('/:userId', deleteUser);
+router.delete('/:userId', verifyAdmin, deleteUser);
 
 export default router;

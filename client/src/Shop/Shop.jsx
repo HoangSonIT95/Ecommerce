@@ -2,12 +2,12 @@
 import React, { useEffect, useState } from 'react';
 import queryString from 'query-string';
 import ProductAPI from '../API/ProductAPI';
-import { Link } from 'react-router-dom';
 import Search from './Component/Search';
 import Pagination from './Component/Pagination';
 import Products from './Component/Products';
 import SortProduct from './Component/SortProduct';
 import convertMoney from '../convertMoney';
+import { ColorRing } from 'react-loader-spinner';
 
 function Shop(props) {
   const [products, setProducts] = useState([]);
@@ -30,18 +30,15 @@ function Shop(props) {
     category: category,
   });
 
+  const [load, setLoad] = useState(true);
   //Hàm này dùng để lấy value từ component SortProduct truyền lên
   const handlerChangeSort = value => {
-    console.log('Value: ', value);
-
     setSort(value);
   };
 
   //Hàm này dùng để thay đổi state pagination.page
   //Nó sẽ truyền xuống Component con và nhận dữ liệu từ Component con truyền lên
   const handlerChangePage = value => {
-    console.log('Value: ', value);
-
     //Sau đó set lại cái pagination để gọi chạy làm useEffect gọi lại API pagination
     setPagination({
       page: value,
@@ -62,10 +59,8 @@ function Shop(props) {
 
   //Hàm này dùng để thay đổi state pagination.category
   const handlerCategory = value => {
-    console.log('Value: ', value);
-
     setPagination({
-      page: pagination.page,
+      page: '1',
       search: pagination.search,
       category: value,
     });
@@ -74,7 +69,6 @@ function Shop(props) {
   useEffect(() => {
     const fetchAllData = async () => {
       let response;
-
       const params = {
         page: pagination.page,
         search: pagination.search,
@@ -90,6 +84,7 @@ function Shop(props) {
       setProducts(response.products);
       setTotalPage(response.totalPage);
       setNumOfResult(response.numOfResult);
+      setLoad(false);
     };
 
     fetchAllData();
@@ -137,19 +132,18 @@ function Shop(props) {
                         className='product-view d-block h-100 bg-cover bg-center'
                         src={value.imageURL[0]}
                         data-lightbox={`product_${value._id}`}
+                        alt='modalImg'
                       />
                     </div>
                     <div className='col-lg-6'>
                       {/* Để tắt modal phải có class="close" và data-dissmiss="modal" và aria-label="Close" */}
-                      <a
+                      <button
                         className='close p-4'
-                        type='button'
-                        href='#section_product'
                         data-dismiss='modal'
                         aria-label='Close'
                       >
                         ×
-                      </a>
+                      </button>
                       <div className='p-5 my-md-4'>
                         <ul className='list-inline mb-2'>
                           <li className='list-inline-item m-0'>
@@ -169,12 +163,14 @@ function Shop(props) {
                           </li>
                         </ul>
                         <h2 className='h4'>{value.name}</h2>
-                        <h5 className='text-muted'>${value.price} VND</h5>
+                        <h5 className='text-muted'>
+                          ${convertMoney(value.price)} VND
+                        </h5>
                         <p className='text-small mb-4'>{value.short_desc}</p>
                         <div className='row align-items-stretch mb-4'>
                           <div className='col-sm-5 pl-sm-0 fix_addwish'>
                             <a className='btn btn-dark btn-sm btn-block h-100 d-flex align-items-center justify-content-center px-0'>
-                              <i className='far fa-heart mr-2'></i>Add Too Wish
+                              <i className='far fa-heart mr-2'></i>Add To Wish
                               List
                             </a>
                           </div>
@@ -318,8 +314,25 @@ function Shop(props) {
                   </ul>
                 </div>
               </div>
-
-              <Products products={products} sort={sort} />
+              {load ? (
+                <ColorRing
+                  visible={true}
+                  height='80'
+                  width='80'
+                  ariaLabel='blocks-loading'
+                  wrapperStyle={{}}
+                  wrapperClass='blocks-wrapper'
+                  colors={[
+                    '#e15b64',
+                    '#f47e60',
+                    '#f8b26a',
+                    '#abbd81',
+                    '#849b87',
+                  ]}
+                />
+              ) : (
+                <Products products={products} sort={sort} />
+              )}
 
               <Pagination
                 pagination={pagination}

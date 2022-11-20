@@ -1,17 +1,20 @@
-import axiosClient from './axiosClient'
+import axiosClient from './axiosClient';
 
 const MessengerAPI = {
+  getRoomOpen: () => {
+    const url = `/chat/roomOpen`;
+    return axiosClient.get(url);
+  },
 
-    getMessage: (query) => {
-        const url = `/messenger/${query}`
-        return axiosClient.get(url)
-    },
+  getMessage: room => {
+    const url = `/chat/room/${room}`;
+    return axiosClient.get(url);
+  },
 
-    postMessage: (query) => {
-        const url = `/messenger/send${query}`
-        return axiosClient.post(url)
-    }
+  postMessage: data => {
+    const url = `/chat/addMessage`;
+    return axiosClient.put(url, data);
+  },
+};
 
-}
-
-export default MessengerAPI
+export default MessengerAPI;
