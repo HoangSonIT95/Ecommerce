@@ -1,49 +1,52 @@
 import mongoose from 'mongoose';
 
-const UserSchema = new mongoose.Schema({
-  fullName: {
-    type: String,
-    required: true,
-  },
-  email: {
-    type: String,
-    required: true,
-    unique: true,
-  },
-  password: {
-    type: String,
-    required: true,
-  },
-  phone: {
-    type: Number,
-    required: true,
-  },
-  cart: {
-    items: [
-      {
-        nameProduct: {
-          type: String,
+const UserSchema = new mongoose.Schema(
+  {
+    fullName: {
+      type: String,
+      required: true,
+    },
+    email: {
+      type: String,
+      required: true,
+      unique: true,
+    },
+    password: {
+      type: String,
+      required: true,
+    },
+    phone: {
+      type: Number,
+      required: true,
+    },
+    cart: {
+      items: [
+        {
+          nameProduct: {
+            type: String,
+          },
+          priceProduct: {
+            type: String,
+          },
+          img: {
+            type: String,
+          },
+          productId: {
+            type: mongoose.Schema.ObjectId,
+            ref: 'Product',
+            required: true,
+          },
+          quantity: { type: Number, required: true },
         },
-        priceProduct: {
-          type: String,
-        },
-        img: {
-          type: String,
-        },
-        productId: {
-          type: mongoose.Schema.ObjectId,
-          ref: 'Product',
-          required: true,
-        },
-        quantity: { type: Number, required: true },
-      },
-    ],
+      ],
+    },
+    role: {
+      type: String,
+      default: 'customer',
+    },
   },
-  role: {
-    type: String,
-    default: 'customer',
-  },
-});
+  { timestamps: true }
+);
 
 UserSchema.methods.addToCart = function (product, count) {
   const cartProductIndex = this.cart.items.findIndex(cp => {

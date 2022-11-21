@@ -13,10 +13,12 @@ Home.propTypes = {};
 function Home(props) {
   const [users, setUsers] = useState(0);
   const [earning, setEarning] = useState(0);
+  const [avg, setAvg] = useState(0);
   const [orders, setOrders] = useState(0);
   const [history, setHistory] = useState([]);
   const [loadCountUser, setLoadCountUser] = useState(true);
   const [loadEarning, setLoadEarning] = useState(true);
+  const [loadAvg, setLoadAvg] = useState(true);
   const [loadCountOder, setLoadCountOder] = useState(true);
   const [loadOrders, setLoadOrders] = useState(true);
 
@@ -29,6 +31,10 @@ function Home(props) {
       const earning = await HistoryAPI.getEarningTotal();
       setEarning(earning);
       setLoadEarning(false);
+
+      const avg = await HistoryAPI.getEarningAvg();
+      setAvg(avg);
+      setLoadAvg(false);
 
       const countOrder = await HistoryAPI.getCountOrder();
       setOrders(countOrder);
@@ -95,7 +101,7 @@ function Home(props) {
             </div>
           </div>
 
-          <div className='card border-right'>
+          <div className='card border-right pr-5'>
             <div className='card-body'>
               <div className='d-flex d-lg-flex d-md-block align-items-center'>
                 <div>
@@ -118,7 +124,45 @@ function Home(props) {
                   )}
 
                   <h6 className='text-muted font-weight-normal mb-0 w-100 text-truncate'>
-                    Earnings of Month
+                    Earnings Total
+                  </h6>
+                </div>
+                <div className='ml-auto mt-md-3 mt-lg-0'>
+                  <span className='opacity-7 text-muted'>
+                    <AccountBalanceWalletIcon
+                      color='secondary'
+                      fontSize='large'
+                    />
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className='card border-right pr-5'>
+            <div className='card-body'>
+              <div className='d-flex d-lg-flex d-md-block align-items-center'>
+                <div>
+                  {loadAvg ? (
+                    <ThreeDots
+                      height='80'
+                      width='80'
+                      radius='9'
+                      color='#4fa94d'
+                      ariaLabel='three-dots-loading'
+                      wrapperStyle={{}}
+                      wrapperClassName=''
+                      visible={true}
+                    />
+                  ) : (
+                    <h2 className='text-dark mb-1 w-100 text-truncate font-weight-medium'>
+                      {convertMoney(avg)}
+                      <sup className='set-doller'> VND</sup>
+                    </h2>
+                  )}
+
+                  <h6 className='text-muted font-weight-normal mb-0 w-100 text-truncate'>
+                    Earnings of Average
                   </h6>
                 </div>
                 <div className='ml-auto mt-md-3 mt-lg-0'>

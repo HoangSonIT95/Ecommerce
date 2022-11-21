@@ -32,17 +32,15 @@ const ProductAPI = {
       headers: {
         'Content-Type': 'multipart/form-data',
       },
-      withCredentials: true,
     });
   },
 
-  updateProduct: (productId,data) => {
+  updateProduct: (productId, data) => {
     const url = `/products/${productId}`;
     return axiosClient.put(url, data, {
       headers: {
         'Content-Type': 'multipart/form-data',
       },
-      withCredentials: true,
     });
   },
 };

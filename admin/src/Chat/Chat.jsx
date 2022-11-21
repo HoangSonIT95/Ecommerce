@@ -4,7 +4,9 @@ import './Chat.css';
 import { ThreeDots } from 'react-loader-spinner';
 
 import io from 'socket.io-client';
-const socket = io('http://localhost:5000', { transports: ['websocket'] });
+const socket = io('https://boutiqueshop.herokuapp.com/', {
+  transports: ['websocket'],
+});
 
 function Chat(props) {
   const [listChat, setListChat] = useState([]);

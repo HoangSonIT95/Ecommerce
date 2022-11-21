@@ -21,8 +21,9 @@ export const createOrder = async (req, res, next) => {
     items.map(async item => {
       const product = await Product.findById(item.productId);
       const stockOld = product.stock;
-if(item.quantity > stockOld){
-throw new Error(' da het hang ')}
+      if (item.quantity > stockOld) {
+        throw new Error(' da het hang ');
+      }
 
       await Product.findByIdAndUpdate(item.productId, {
         $set: {
@@ -163,6 +164,31 @@ export const getEarningTotal = async (req, res, next) => {
     res.status(200).json(earningTotal);
   } catch (err) {
     next(err);
+  }
+};
+
+export const getEarningAvg = async (req, res, next) => {
+  try {
+    function getMonthDifference(startDate, endDate) {
+      return (
+        endDate.getMonth() -
+        startDate.getMonth() +
+        12 * (endDate.getFullYear() - startDate.getFullYear())
+      );
+    }
+
+    const orders = await Order.find();
+    const totalP = orders.reduce((total, item) => {
+      return total + Number(item.total);
+    }, 0);
+    const startDate = orders[0].createdAt;
+    const endDate = orders[orders.length - 1].createdAt;
+    const months = getMonthDifference(startDate, endDate) || 1;
+
+    const average = (totalP / months).toFixed();
+    res.status(200).json(average);
+  } catch (err) {
+    return next(err);
   }
 };
 

@@ -21,6 +21,11 @@ const HistoryAPI = {
     return axiosClient.get(url);
   },
 
+  getEarningAvg: () => {
+    const url = '/orders/earningEvg';
+    return axiosClient.get(url);
+  },
+
   getCountOrder: () => {
     const url = '/orders/countOrder';
     return axiosClient.get(url);

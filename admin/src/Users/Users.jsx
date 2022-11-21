@@ -36,11 +36,6 @@ function Users(props) {
               <div className='card-body'>
                 <div className='d-flex justify-content-between'>
                   <h4 className='card-title'>Users</h4>
-                  <input
-                    className='form-control w-35'
-                    type='text'
-                    placeholder='Enter Search!'
-                  />
                   <Link to='/users/new'>
                     <button
                       style={{ cursor: 'pointer', color: 'white' }}

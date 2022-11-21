@@ -28,7 +28,8 @@ export const EditProduct = async (req, res, next) => {
     const product = await Product.findById(req.params.productId);
     if (!product) return res.status(422).json('Not found this product!');
 
-    const imageURL = req.body.imageURL.split(',');
+    const imageURL =
+      req.body.imageURL === '' ? [] : req.body.imageURL.split(',');
 
     const images = req.files;
     if (images) {
