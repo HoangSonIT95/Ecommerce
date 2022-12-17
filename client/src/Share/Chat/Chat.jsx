@@ -4,7 +4,7 @@ import './Chat.css';
 import ChatRoomsAPI from '../../API/ChatRoomsAPI';
 
 import io from 'socket.io-client';
-const socket = io('https://boutiqueshop.herokuapp.com/', {
+const socket = io('https://server-boutique.vercel.app/', {
   transports: ['websocket'],
 });
 

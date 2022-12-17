@@ -4,7 +4,7 @@ import './Chat.css';
 import { ThreeDots } from 'react-loader-spinner';
 
 import io from 'socket.io-client';
-const socket = io('https://boutiqueshop.herokuapp.com/', {
+const socket = io('https://server-boutique.vercel.app/', {
   transports: ['websocket'],
 });
 
